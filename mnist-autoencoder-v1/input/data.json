@@ -1,7 +1,80 @@
 [
     {
-        "elements": "{ \"encoding\":\"dense\",\"length\":2,\"elements\":[0.16666667,0.5]}", 
-        "name": "model-output", 
-        "sizes": "{\"sizes\":[2],\"labels\":[\"x\"]}"
+        "refKeys": "2016-09-09-01:59:52/image-class-output-image", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-encoder-input", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/image-encoder-output-encoded", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-region-1-ff-ff-input-1", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/constant-output", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-region-1-ff-ff-input-2", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/constant-output", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-region-1-ff-fb-input", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/image-region-1-ff-prediction-fn", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-region-2-ff-ff-input-1", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/constant-output", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-region-2-ff-ff-input-2", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/constant-output", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-region-2-ff-fb-input", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/image-region-2-ff-prediction-fn", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-region-3-ff-ff-input-1", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/constant-output", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-region-3-ff-ff-input-2", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/constant-output", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/image-region-3-ff-fb-input", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/image-region-1-ff-prediction-fn, 2016-09-09-01:59:52/image-region-2-ff-prediction-fn, 2016-09-09-01:59:52/image-region-3-ff-prediction-fn", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/class-features-features", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/image-region-1-ff-fb-output-1-unfolded-activity", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/activity-image-decoder-input-encoded", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "2016-09-09-01:59:52/image-region-1-ff-fb-output-1-unfolded-prediction", 
+        "elements": "null", 
+        "name": "2016-09-09-01:59:52/predicted-image-decoder-input-encoded", 
+        "sizes": "null"
     }
 ]
