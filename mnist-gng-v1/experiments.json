@@ -3,12 +3,9 @@
 		{
 			"import-files":
 			{
-				"file-entities": "experiment-entity.json",
-				"file-data": "experiment-data.json"
-			},
-
-		    "parameter-sweeps": [
-		  ]
+				"file-entities": "entity.json",
+				"file-data": "data.json"
+			}
 		}
 	]
 }
