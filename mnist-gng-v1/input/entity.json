@@ -1,0 +1,16 @@
+[
+    {
+        "node": "myNode", 
+        "config": "{\"pause\":false,\"terminate\":true,\"terminating\":true,\"terminated\":true,\"terminationAge\":20,\"age\":22,\"seed\":1472741199428,\"reset\":false,\"flush\":true,\"learn\":true}", 
+        "type": "experiment", 
+        "name": "experiment", 
+        "parent": "null"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"min\":0.0,\"max\":1.0,\"elements\":2,\"levels\":5,\"age\":22,\"seed\":8236658600459473983,\"reset\":false,\"flush\":true,\"learn\":true}", 
+        "type": "discrete-random", 
+        "name": "model", 
+        "parent": "experiment"
+    }
+]

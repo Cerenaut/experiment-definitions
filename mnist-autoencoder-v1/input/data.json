@@ -1,0 +1,7 @@
+[
+    {
+        "elements": "{ \"encoding\":\"dense\",\"length\":2,\"elements\":[0.16666667,0.5]}", 
+        "name": "model-output", 
+        "sizes": "{\"sizes\":[2],\"labels\":[\"x\"]}"
+    }
+]

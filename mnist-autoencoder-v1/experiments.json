@@ -1,0 +1,14 @@
+{
+	"experiments": [
+		{
+			"import-files":
+			{
+				"file-entities": "experiment-entity.json",
+				"file-data": "experiment-data.json"
+			},
+
+		    "parameter-sweeps": [
+		  ]
+		}
+	]
+}
