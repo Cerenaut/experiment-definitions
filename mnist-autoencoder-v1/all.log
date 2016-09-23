@@ -50,3 +50,21 @@
 2016-09-09 23:47:32.281 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/image-region-2-ff path: contextFreeAgeScale value: 12.0
 2016-09-09 23:47:32.302 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/image-region-2-ff path: outputSparsity value: 2.25
 2016-09-09 23:47:32.323 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/image-region-2-ff path: defaultPredictionInhibition value: 1.0
+2016-09-09 23:47:32.342 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/image-region-2-ff path: predictorLearningRate value: 0.01
+2016-09-09 23:47:32.363 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/class-features path: classEntityName value: 2016-09-09-11:47:30/image-class
+2016-09-09 23:47:32.384 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/class-features path: classConfigPath value: imageClass
+2016-09-09 23:47:32.405 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/class-features path: classes value: 10
+2016-09-09 23:47:32.439 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/class-features path: onlineLearning value: false
+2016-09-09 23:47:32.463 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/class-features path: onlineLearningRate value: 0.01
+2016-09-09 23:47:32.485 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/value-series-predicted path: period value: -1
+2016-09-09 23:47:32.505 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/value-series-error path: period value: -1
+2016-09-09 23:47:32.525 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/value-series-truth path: period value: -1
+2016-09-09 23:47:32.545 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/value-series-predicted path: entityName value: 2016-09-09-11:47:30/class-features
+2016-09-09 23:47:32.565 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/value-series-error path: entityName value: 2016-09-09-11:47:30/class-features
+2016-09-09 23:47:32.586 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/value-series-truth path: entityName value: 2016-09-09-11:47:30/class-features
+2016-09-09 23:47:32.607 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/value-series-predicted path: configPath value: classPredicted
+2016-09-09 23:47:32.628 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/value-series-error path: configPath value: classError
+2016-09-09 23:47:32.649 [main] INFO  io.agi.framework.Framework - Set config of: 2016-09-09-11:47:30/value-series-truth path: configPath value: classTruth
+2016-09-14 02:21:07.610 [Thread-2] ERROR io.agi.framework.coordination.http.HttpExportHandler - [Ljava.lang.StackTraceElement;@1c134f00
+2016-09-14 02:23:39.642 [Thread-2] ERROR io.agi.framework.coordination.http.HttpExportHandler - [Ljava.lang.StackTraceElement;@295ccf4c
+2016-09-14 02:25:35.456 [Thread-2] INFO  io.agi.framework.Node - Stopping process on request.

@@ -1,0 +1,5 @@
+2016-09-23 13:09:10.868 [main] ERROR io.agi.framework.Main - Could not load package properties file to query code version.
+2016-09-23 13:09:11.065 [main] INFO  io.agi.framework.persistence.PersistenceFactory - Using Node memory for persistence (note: You mustn't have more than one node in this configuration).
+2016-09-23 13:09:11.121 [main] INFO  io.agi.framework.coordination.CoordinationFactory - Distributed coordination.
+2016-09-23 13:11:21.976 [Thread-5] ERROR io.agi.framework.Main - Could not load package properties file to query code version.
+2016-09-23 17:11:43.198 [Thread-5] ERROR io.agi.framework.Main - Could not load package properties file to query code version.

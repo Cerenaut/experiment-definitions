@@ -1,11 +1,60 @@
 {
-	"experiments": [
-		{
-			"import-files":
-			{
-				"file-entities": "entity.json",
-				"file-data": "data.json"
-			}
-		}
-	]
+  "experiments": [
+    {
+      "import-files": {
+        "file-entities": "entity.json",
+        "file-data": "data.json"
+      },
+      "dataset-parameters": [
+        {
+          "entity-name": "image-class",
+          "parameter-path": "sourceFilesPathTraining",
+          "value": "/data/training"
+        },
+        {
+          "entity-name": "image-class",
+          "parameter-path": "sourceFilesPathTesting",
+          "value": "/data/testing"
+        }
+      ],
+      "parameter-sweeps": [
+        {
+          "parameter-set": [
+            {
+              "entity-name": "experiment",
+              "parameter-path": "widthCells",
+              "val-begin": 6,
+              "val-end": 10,
+              "val-inc": 2
+            },
+            {
+              "entity-name": "experiment",
+              "parameter-path": "terminationAge",
+              "val-begin": 2,
+              "val-end": 4,
+              "val-inc": 1
+            }
+          ]
+        },
+        {
+          "parameter-set": [
+            {
+              "entity-name": "image-region-1-ff",
+              "parameter-path": "organizerWidthCells",
+              "val-begin": 8,
+              "val-end": 12,
+              "val-inc": 2
+            },
+            {
+              "entity-name": "image-region-1-ff",
+              "parameter-path": "organizerHeightCells",
+              "val-begin": 8,
+              "val-end": 12,
+              "val-inc": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
