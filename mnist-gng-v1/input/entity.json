@@ -57,16 +57,9 @@
     }, 
     {
         "node": "myNode", 
-        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"period\":\"-1\",\"entityName\":\"SPAGHETTI--class-features\",\"configPath\":\"classPredicted\"}", 
+        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"period\":\"-1\",\"entityName\":\"SPAGHETTI--class-features\",\"configPath\":\"classTruth\"}", 
         "type": "value-series", 
-        "name": "SPAGHETTI--value-series-predicted", 
-        "parent": "SPAGHETTI--class-features"
-    }, 
-    {
-        "node": "myNode", 
-        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"period\":\"-1\",\"entityName\":\"SPAGHETTI--class-features\",\"configPath\":\"classError\"}", 
-        "type": "value-series", 
-        "name": "SPAGHETTI--value-series-error", 
+        "name": "SPAGHETTI--value-series-truth", 
         "parent": "SPAGHETTI--class-features"
     }, 
     {
@@ -78,16 +71,23 @@
     }, 
     {
         "node": "myNode", 
-        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"period\":\"-1\",\"entityName\":\"SPAGHETTI--class-features\",\"configPath\":\"classTruth\"}", 
-        "type": "value-series", 
-        "name": "SPAGHETTI--value-series-truth", 
+        "config": "{\"encoderType\":\"ScalarEncoder\",\"digits\":1,\"numbers\":1,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"density\":\"1\",\"bits\":\"1\",\"encodeZero\":\"false\"}", 
+        "type": "decoder", 
+        "name": "SPAGHETTI--predicted-image-decoder", 
         "parent": "SPAGHETTI--class-features"
     }, 
     {
         "node": "myNode", 
-        "config": "{\"encoderType\":\"ScalarEncoder\",\"digits\":1,\"numbers\":1,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"density\":\"1\",\"bits\":\"1\",\"encodeZero\":\"false\"}", 
-        "type": "decoder", 
-        "name": "SPAGHETTI--predicted-image-decoder", 
+        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"period\":\"-1\",\"entityName\":\"SPAGHETTI--class-features\",\"configPath\":\"classPredicted\"}", 
+        "type": "value-series", 
+        "name": "SPAGHETTI--value-series-predicted", 
+        "parent": "SPAGHETTI--class-features"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"period\":\"-1\",\"entityName\":\"SPAGHETTI--class-features\",\"configPath\":\"classError\"}", 
+        "type": "value-series", 
+        "name": "SPAGHETTI--value-series-error", 
         "parent": "SPAGHETTI--class-features"
     }
 ]
