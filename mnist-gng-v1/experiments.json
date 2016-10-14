@@ -21,6 +21,14 @@
         {
           "parameter-set": [
             {
+              "entity-name": "image-class",
+              "parameter-path": "trainingBatches",
+              "val-begin": 1,
+              "val-end": 1,
+              "val-inc": 1
+            },
+
+            {
               "entity-name": "image-region-1-ff",
               "parameter-path": "organizerWidthCells",
               "val-begin": 8,
