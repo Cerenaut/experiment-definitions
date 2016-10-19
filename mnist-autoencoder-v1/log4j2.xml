@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="INFO">
+<Configuration status="WARN">
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
         </Console>
-        <File name="MyFile" fileName="all.log" immediateFlush="false" append="false">
+        <File name="MyFile" fileName="log4j2.log" immediateFlush="false" append="false">
             <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
         <LogglyAppender name="LogglyAppender"
@@ -13,9 +13,9 @@
         </LogglyAppender>
     </Appenders>
     <Loggers>
-        <Root level="info">
+        <Root level="WARN">
             <AppenderRef ref="LogglyAppender" />
-            <AppenderRef ref="Console" />
+            <!-- <AppenderRef ref="Console" /> -->
             <AppenderRef ref="MyFile"/>
         </Root>
     </Loggers>
