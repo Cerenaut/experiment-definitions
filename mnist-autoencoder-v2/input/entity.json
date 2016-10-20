@@ -1,0 +1,71 @@
+[
+  {
+    "name": "SPAGHETTI--experiment",
+    "type": "experiment",
+    "node": "myNode",
+    "config": "{\"pause\":false,\"terminate\":true,\"terminating\":true,\"terminated\":true,\"terminationEntityName\":\"SPAGHETTI--image-class\",\"terminationConfigPath\":\"terminate\",\"terminationAge\":-1,\"age\":26,\"seed\":1476930136220,\"reset\":false,\"flush\":true,\"learn\":true}"
+  },
+  {
+    "name": "SPAGHETTI--image-class",
+    "type": "image-class",
+    "node": "myNode",
+    "parent": "SPAGHETTI--experiment",
+    "config": "{\"receptiveField\":{\"receptiveFieldX\":0,\"receptiveFieldY\":0,\"receptiveFieldW\":28,\"receptiveFieldH\":28},\"resolution\":{\"resolutionX\":28,\"resolutionY\":28},\"greyscale\":true,\"invert\":true,\"learningEntitiesAlgorithm\":\"SPAGHETTI--image-region-1-ff,SPAGHETTI--image-region-2-ff\",\"learningEntitiesAnalytics\":\"SPAGHETTI--class-features\",\"sourceFilesPathTraining\":\"/home/dave/workspace/agi.io/data/mnist/cycle10\",\"sourceFilesPathTesting\":\"/home/dave/workspace/agi.io/data/mnist/cycle3\",\"imageClass\":2,\"imageIndex\":3,\"imageRepeat\":0,\"imageRepeats\":1,\"trainingBatch\":1,\"trainingBatches\":1,\"terminate\":true,\"phase\":\"test-analytics\",\"age\":26,\"seed\":1476930136227,\"reset\":false,\"flush\":true,\"learn\":true}"
+  },
+  {
+    "name": "SPAGHETTI--image-encoder",
+    "type": "encoder",
+    "node": "myNode",
+    "parent": "SPAGHETTI--image-class",
+    "config": "{\"encoderType\":\"ScalarEncoder\",\"bits\":1,\"density\":1,\"encodeZero\":false,\"digits\":1,\"numbers\":1,\"age\":26,\"seed\":1476930136349,\"reset\":false,\"flush\":true,\"learn\":true}"
+  },
+  {
+    "name": "SPAGHETTI--constant",
+    "type": "constant-matrix",
+    "node": "myNode",
+    "parent": "SPAGHETTI--image-encoder",
+    "config": "{\"width\":1,\"height\":1,\"value\":0.0,\"age\":26,\"seed\":1476930136352,\"reset\":false,\"flush\":true,\"learn\":true}"
+  },
+  {
+    "name": "SPAGHETTI--image-region-1-ff",
+    "type": "auto-region-layer",
+    "node": "myNode",
+    "parent": "SPAGHETTI--constant",
+    "config": "{\"contextFreeLearningRate\":0.05,\"contextFreeWidthCells\":32,\"contextFreeHeightCells\":32,\"contextFreeBinaryOutput\":true,\"contextFreeSparsity\":25,\"contextFreeSparsityOutput\":2.5,\"contextFreeSparsityMin\":25,\"contextFreeSparsityMax\":921,\"contextFreeAgeMin\":0,\"contextFreeAgeMax\":1400,\"contextFreeAge\":26,\"contextFreeAgeScale\":12.0,\"outputSparsity\":2.5,\"defaultPredictionInhibition\":1.0,\"predictorLearningRate\":0.01,\"age\":26,\"seed\":2401996630328972082,\"reset\":false,\"flush\":true,\"learn\":false}"
+  },
+  {
+    "name": "SPAGHETTI--image-region-2-ff",
+    "type": "auto-region-layer",
+    "node": "myNode",
+    "parent": "SPAGHETTI--image-region-1-ff",
+    "config": "{\"contextFreeLearningRate\":0.05,\"contextFreeWidthCells\":20,\"contextFreeHeightCells\":20,\"contextFreeBinaryOutput\":true,\"contextFreeSparsity\":12,\"contextFreeSparsityOutput\":2.25,\"contextFreeSparsityMin\":12,\"contextFreeSparsityMax\":360,\"contextFreeAgeMin\":0,\"contextFreeAgeMax\":1400,\"contextFreeAge\":26,\"contextFreeAgeScale\":12.0,\"outputSparsity\":2.25,\"defaultPredictionInhibition\":1.0,\"predictorLearningRate\":0.01,\"age\":26,\"seed\":-2677131183512685625,\"reset\":false,\"flush\":true,\"learn\":false}"
+  },
+  {
+    "name": "SPAGHETTI--class-features",
+    "type": "class-features",
+    "node": "myNode",
+    "parent": "SPAGHETTI--image-region-2-ff",
+    "config": "{\"classEntityName\":\"SPAGHETTI--image-class\",\"classConfigPath\":\"imageClass\",\"classes\":10,\"onlineLearning\":false,\"onlineLearningRate\":0.01,\"classPredicted\":2,\"classError\":0,\"classTruth\":2,\"age\":26,\"seed\":1476930136896,\"reset\":false,\"flush\":true,\"learn\":false}"
+  },
+  {
+    "name": "SPAGHETTI--value-series-error",
+    "type": "value-series",
+    "node": "myNode",
+    "parent": "SPAGHETTI--class-features",
+    "config": "{\"period\":-1,\"entityName\":\"SPAGHETTI--class-features\",\"configPath\":\"classError\",\"age\":26,\"seed\":1476930136903,\"reset\":false,\"flush\":true,\"learn\":true}"
+  },
+  {
+    "name": "SPAGHETTI--value-series-predicted",
+    "type": "value-series",
+    "node": "myNode",
+    "parent": "SPAGHETTI--class-features",
+    "config": "{\"period\":-1,\"entityName\":\"SPAGHETTI--class-features\",\"configPath\":\"classPredicted\",\"age\":26,\"seed\":1476930136904,\"reset\":false,\"flush\":true,\"learn\":true}"
+  },
+  {
+    "name": "SPAGHETTI--value-series-truth",
+    "type": "value-series",
+    "node": "myNode",
+    "parent": "SPAGHETTI--class-features",
+    "config": "{\"period\":-1,\"entityName\":\"SPAGHETTI--class-features\",\"configPath\":\"classTruth\",\"age\":26,\"seed\":1476930136904,\"reset\":false,\"flush\":true,\"learn\":true}"
+  }
+]
