@@ -18,5 +18,8 @@
             <!-- <AppenderRef ref="Console" /> -->
             <AppenderRef ref="MyFile"/>
         </Root>
+                <!-- show the following at the desired level -->
+        <!-- <Logger name="io.agi.framework.persistence.jdbc.JdbcUtil" level="INFO"/> -->
+
     </Loggers>
 </Configuration>
