@@ -9,12 +9,12 @@
         {
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTraining",
-          "value": "mnist/training"
+          "value": "train-small"
         },
         {
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTesting",
-          "value": "mnist/testing"
+          "value": "test-small"
         }
       ],
       "parameter-sweeps": [

@@ -1,8 +1,12 @@
 #!/bin/bash
 
 ######################################################################
-# Use this 'variables.sh' if you are running the system locally, 
-# or if you are are deploying Docker containters from this local environment.
+# Use this 'variables.sh' if you are running the system on EC2,
+# or if you are are deploying Docker containters from EC2 machine.
+#
+# In general, it doesn't need to be modified.
+# INSTEAD - modify the variables.sh file that you are using on the 
+# 			machine from which you are syncing to here.
 ######################################################################
 
 

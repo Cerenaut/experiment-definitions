@@ -1,8 +1,9 @@
 #!/bin/bash
 
 ######################################################################
-# Use this 'variables.sh' if you are running the system locally, 
-# or if you are are deploying Docker containters from this local environment.
+#
+# Use this 'variables.sh' if you are running experiments from Jenkins
+#
 ######################################################################
 
 

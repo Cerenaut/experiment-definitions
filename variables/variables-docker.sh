@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 ######################################################################
 # Use this 'variables.sh' if you are running the system in a 
 # Docker container.  
