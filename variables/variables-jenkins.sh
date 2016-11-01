@@ -17,7 +17,7 @@ export AGI_HOME=$WORKSPACE/agi
 export AGI_RUN_HOME=$WORKSPACE/experiment-definitions/mnist-autoencoder-v2
 
 # RUN Home
-export AGI_DATA_HOME=		# there is no Data on Jenkins
+export AGI_DATA_HOME=$AGI_RUN_HOME		# there is no Data on Jenkins, but needs to be a real folder
 
 # DATA RUN Home (set to the home of the data for the actual experiment - i.e. in the environment where they'll be running)
 # export AGI_DATA_HOME=~/Development/ProjectAGI/AGIEF/datasets/MNIST      # when running locally
