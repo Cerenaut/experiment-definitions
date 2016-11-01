@@ -13,13 +13,19 @@
 # ---------------------------------------
 
 # Code Home
-export AGI_HOME=~/dev/agi
+export AGI_HOME=/root/dev/agi
 
 # RUN Home
-export AGI_RUN_HOME=~/dev/run
+export AGI_RUN_HOME=/root/dev/run
 
 # DATA Home
-export AGI_DATA_HOME=~/dev/data
+export AGI_DATA_HOME=/root/dev/data
+
+# DATA Run Home (set to the home of the data for the actual experiment - i.e. in the environment where they'll be running)
+export AGI_DATA_RUN_HOME=$AGI_DATA_HOME
+
+
+
 
 # Database 
 export DB_PORT=5432

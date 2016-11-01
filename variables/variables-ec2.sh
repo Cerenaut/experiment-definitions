@@ -18,9 +18,11 @@ export AGI_HOME=/home/ec2-user/agief-project/agi
 # RUN Home
 export AGI_RUN_HOME=/home/ec2-user/agief-project/run
 
-# DATA Home (set to the home of the data for the actual experiment - i.e. in the environment where they'll be running)
-# export AGI_DATA_HOME=~/Development/ProjectAGI/AGIEF/datasets/MNIST      # when running locally
-export AGI_DATA_HOME=/root/dev/data
+# DATA Home
+export AGI_DATA_HOME=/home/ec2-user/agief-project/data
+
+# DATA Run Home (set to the home of the data for the actual experiment - i.e. in the environment where they'll be running)
+export AGI_DATA_RUN_HOME=/root/dev/data
 
 # Database
 export DB_PORT=5432
