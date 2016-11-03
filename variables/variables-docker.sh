@@ -19,7 +19,7 @@ export AGI_HOME=/root/dev/agi
 export AGI_RUN_HOME=/root/dev/run
 
 # DATA Home
-export AGI_DATA_HOME=/root/dev/data/mnist
+export AGI_DATA_HOME=/root/dev/data
 
 # DATA Run Home (set to the home of the data for the actual experiment - i.e. in the environment where they'll be running)
 export AGI_DATA_RUN_HOME=$AGI_DATA_HOME
