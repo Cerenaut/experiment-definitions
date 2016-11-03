@@ -21,7 +21,7 @@ export AGI_DATA_HOME=$AGI_RUN_HOME		# there is no Data on Jenkins, but needs to 
 
 # DATA RUN Home (set to the home of the data for the actual experiment - i.e. in the environment where they'll be running)
 # export AGI_DATA_HOME=~/Development/ProjectAGI/AGIEF/datasets/MNIST      # when running locally
-export AGI_DATA_RUN_HOME=/root/dev/data
+export AGI_DATA_RUN_HOME=/root/dev/data/mnist
 
 # Database
 export DB_PORT=5432
