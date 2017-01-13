@@ -1,0 +1,14 @@
+[
+    {
+        "refKeys": "170113-1722--image-class-output-image",
+        "elements": "null",
+        "name": "170113-1722--autoencoder-input",
+        "sizes": "null"
+    },
+    {
+        "refKeys": "170113-1722--autoencoder-spikes-top-ka",
+        "elements": "null",
+        "name": "170113-1722--feature-series-input",
+        "sizes": "null"
+    }
+]

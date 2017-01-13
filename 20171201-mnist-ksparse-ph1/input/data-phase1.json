@@ -1,0 +1,14 @@
+[
+    {
+        "refKeys": "SPAGHETTI--image-class-output-image", 
+        "elements": "null", 
+        "name": "SPAGHETTI--autoencoder-input", 
+        "sizes": "null"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--autoencoder-spikes-top-ka", 
+        "elements": "null", 
+        "name": "SPAGHETTI--feature-series-input", 
+        "sizes": "null"
+    }
+]
