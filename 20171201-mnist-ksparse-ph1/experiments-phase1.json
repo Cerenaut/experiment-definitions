@@ -15,14 +15,19 @@
       },      
       "dataset-parameters": [
         {
+          "entity-name": "autoencoder",
+          "parameter-path": "ageMax",
+          "value": "10"
+        },
+        {
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTraining",
-          "value": "training-small"
+          "value": "cycle10"
         },
         {
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTesting",
-          "value": "testing-small"
+          "value": "cycle10x2"
         }
       ]
     }
