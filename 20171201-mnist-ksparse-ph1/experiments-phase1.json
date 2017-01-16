@@ -12,13 +12,8 @@
         "file-data": [
             "data-phase1.json"
           ]
-      },      
+      },
       "dataset-parameters": [
-        {
-          "entity-name": "autoencoder",
-          "parameter-path": "ageMax",
-          "value": "10"
-        },
         {
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTraining",
@@ -28,6 +23,19 @@
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTesting",
           "value": "cycle10x2"
+        }
+      ],
+      "parameter-sweeps": [
+        {
+          "parameter-set": [
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "ageMax",
+              "val-begin": 10,
+              "val-end": 10,
+              "val-inc": 1
+            }
+          ]
         }
       ]
     }
