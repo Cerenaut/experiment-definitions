@@ -14,7 +14,7 @@
 export AGI_HOME=/Users/gideon/Development/ProjectAGI/AGIEF/agi
 
 # RUN Home (set to the home of the experiment definitions - i.e. the environment where you are launching experiments from, which is not necessarily where they are being executed)
-export AGI_RUN_HOME=/Users/gideon/Development/ProjectAGI/AGIEF/experiment-definitions/20171201-mnist-ksparse-ph1  # mnist-gng-v1
+export AGI_RUN_HOME=/Users/gideon/Development/ProjectAGI/AGIEF/experiment-definitions/20171201-mnist-ksparse  # mnist-gng-v1
 
 # DATA Home 
 export AGI_DATA_HOME=/Users/gideon/Development/ProjectAGI/AGIEF/datasets/mnist      # when running locally

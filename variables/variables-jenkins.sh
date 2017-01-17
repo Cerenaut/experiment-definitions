@@ -13,8 +13,7 @@
 export AGI_HOME=$WORKSPACE/agi
 
 # RUN Home
-#export AGI_RUN_HOME=$WORKSPACE/experiment-definitions/mnist-gng-v1
-export AGI_RUN_HOME=$WORKSPACE/experiment-definitions/mnist-autoencoder-v2
+export AGI_RUN_HOME=$WORKSPACE/experiment-definitions/20171201-mnist-ksparse
 
 # RUN Home
 export AGI_DATA_HOME=$AGI_RUN_HOME		# there is no Data on Jenkins, but needs to be a real folder
