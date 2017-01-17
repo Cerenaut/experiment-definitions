@@ -17,12 +17,12 @@
         {
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTraining",
-          "value": "cycle10"
+          "value": "training"
         },
         {
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTesting",
-          "value": "cycle10x2"
+          "value": "testing"
         }
       ],
       "parameter-sweeps": [

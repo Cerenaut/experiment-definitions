@@ -1,5 +1,6 @@
-2016-09-23 13:09:10.868 [main] ERROR io.agi.framework.Main - Could not load package properties file to query code version.
-2016-09-23 13:09:11.065 [main] INFO  io.agi.framework.persistence.PersistenceFactory - Using Node memory for persistence (note: You mustn't have more than one node in this configuration).
-2016-09-23 13:09:11.121 [main] INFO  io.agi.framework.coordination.CoordinationFactory - Distributed coordination.
-2016-09-23 13:11:21.976 [Thread-5] ERROR io.agi.framework.Main - Could not load package properties file to query code version.
-2016-09-23 17:11:43.198 [Thread-5] ERROR io.agi.framework.Main - Could not load package properties file to query code version.
+2017-01-17 08:00:54.491 [main] ERROR io.agi.framework.Main - Could not load package properties file to query code version.
+2017-01-17 08:00:54.497 [main] INFO  io.agi.framework.persistence.PersistenceFactory - Using Node memory for persistence (note: You mustn't have more than one node in this configuration).
+2017-01-17 08:00:54.501 [main] INFO  io.agi.framework.coordination.CoordinationFactory - Distributed coordination.
+2017-01-17 08:00:54.577 [main] INFO  io.agi.framework.Framework - Set config of: experiment path: terminationAge value: 20
+2017-01-17 08:00:54.583 [main] INFO  io.agi.framework.Framework - Set config of: model path: elements value: 2
+2017-01-17 08:00:54.584 [main] INFO  io.agi.framework.Framework - Set config of: classifier path: reset value: true
