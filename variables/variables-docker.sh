@@ -18,6 +18,9 @@ export AGI_HOME=/root/dev/agi
 # RUN Home
 export AGI_RUN_HOME=/root/dev/run
 
+# Experiment Home
+export AGI_EXP_HOME=$AGI_RUN_HOME
+
 # DATA Home
 export AGI_DATA_HOME=/root/dev/data
 

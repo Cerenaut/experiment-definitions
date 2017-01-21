@@ -18,6 +18,9 @@ export AGI_HOME=/home/ec2-user/agief-project/agi
 # RUN Home
 export AGI_RUN_HOME=/home/ec2-user/agief-project/run
 
+# EXPeriment Home
+export AGI_EXP_HOME=$AGI_RUN_HOME
+
 # DATA Home
 export AGI_DATA_HOME=/home/ec2-user/agief-project/data/mnist
 
