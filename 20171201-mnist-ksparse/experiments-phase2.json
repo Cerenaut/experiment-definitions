@@ -5,8 +5,8 @@
         "file-entities": "entities-phase2.json",
         "file-data": [
             "data-phase2.json",
-            "data-phase1_170113-1650.json",
-            "datarefs-phase2.json"
+            "datarefs-phase2.json",
+            "../output/exported_data-phase1_170122-1250.json"
           ]
       },
       "gen-files": {
@@ -15,16 +15,18 @@
             "data-phase2.json"
           ]
       },
-      "dataset-parameters": [
+      "dataset-parameters": [],
+      "parameter-sweeps": [
         {
-          "entity-name": "image-class",
-          "parameter-path": "sourceFilesPathTraining",
-          "value": "training-small"
-        },
-        {
-          "entity-name": "image-class",
-          "parameter-path": "sourceFilesPathTesting",
-          "value": "testing-small"
+          "parameter-set": [
+            {
+              "entity-name": "logistic-regression",
+              "parameter-path": "C",
+              "val-begin": 100,
+              "val-end": 100,
+              "val-inc": 1
+            }
+          ]
         }
       ]
     }
