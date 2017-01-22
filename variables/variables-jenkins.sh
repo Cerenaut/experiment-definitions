@@ -13,7 +13,7 @@
 export AGI_HOME=$WORKSPACE/agi
 
 # RUN Home. Set to the location where the experiments are being executed.
-export AGI_RUN_HOME=/home/ec2-user/agief-project/run
+export AGI_RUN_HOME=/root/dev/run
 
 # Experiment Definitions home. Set to the home of the experiment definitions - i.e. the environment where you are launching experiments from, which is not necessarily where they are being executed.
 export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20171201-mnist-ksparse
