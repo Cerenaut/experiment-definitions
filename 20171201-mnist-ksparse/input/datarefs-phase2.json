@@ -1,6 +1,6 @@
 [
     {
-        "refKeys": "170113-1650--feature-series-input",
-        "name": "SPAGHETTI--AnalyticsEntity"
+        "refKeys": "170122-0412--feature-series-output",
+        "name": "SPAGHETTI--analytics-input-features"
     }
 ]
