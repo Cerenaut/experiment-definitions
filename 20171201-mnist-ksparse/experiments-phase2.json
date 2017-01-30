@@ -22,9 +22,7 @@
             {
               "entity-name": "logistic-regression",
               "parameter-path": "C",
-              "val-begin": 100,
-              "val-end": 100,
-              "val-inc": 1
+              "val-series": [0.001, 0.01, 0.1, 1.0, 10, 100]
             }
           ]
         }
