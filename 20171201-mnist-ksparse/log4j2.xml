@@ -15,7 +15,7 @@
     <Loggers>
         <Root level="WARN">
             <AppenderRef ref="LogglyAppender" />
-            <AppenderRef ref="Console" />
+            <!-- <AppenderRef ref="Console" /> -->
             <AppenderRef ref="MyFile"/>
         </Root>
                 <!-- show the following at the desired level -->

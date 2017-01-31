@@ -5,7 +5,6 @@
         "file-entities": "entities-phase2.json",
         "file-data": [
             "data-phase2.json",
-            "datarefs-phase2.json",
             "../output/saved__170122-0412--experiment-data.json"
           ]
       },
