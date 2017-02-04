@@ -5,7 +5,7 @@
         "file-entities": "entities-phase2.json",
         "file-data": [
             "data-phase2.json",
-            "../output/saved__170122-0412--experiment-data.json"
+            "../output/170122-0412/saved__170122-0412--experiment-data.json"
           ]
       },
       "gen-files": {
@@ -22,7 +22,22 @@
               "entity-name": "logistic-regression",
               "parameter-path": "C",
               "val-series": [0.001, 0.01, 0.1, 1.0, 10, 100]
-            }
+            },
+            {
+              "entity-name": "analytics",
+              "parameter-path": "trainSetSize",
+              "val-series": [60000,60000,60000,60000,60000,60000]
+            },
+            {
+              "entity-name": "analytics",
+              "parameter-path": "testSetSize",
+              "val-series": [70000,70000,70000,70000,70000,70000]
+            },            
+            {
+              "entity-name": "analytics",
+              "parameter-path": "testSetOffset",
+              "val-series": [0,0,0,0,0,0]
+            }            
           ]
         }
       ]
