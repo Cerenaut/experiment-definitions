@@ -1,0 +1,18 @@
+[
+    {
+        "refKeys": "170122-0412--feature-series-output", 
+        "name": "SPAGHETTI--analytics-input-features"
+    }, 
+    {
+        "refKeys": "170122-0412--label-series-output", 
+        "name": "SPAGHETTI--analytics-input-labels"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--analytics-output-features", 
+        "name": "SPAGHETTI--logistic-regression-input-features"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--analytics-output-labels", 
+        "name": "SPAGHETTI--logistic-regression-input-labels"
+    }
+]
