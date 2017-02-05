@@ -4,10 +4,14 @@
       "import-files": {
         "file-entities": "entities-phase2.json",
         "file-data": [
-            "data-phase2-small.json",
-            "../output/170202-1620/exported_data-phase1_170202-1620.json"
+            "data-phase2-small.json"
           ]
       },
+      "load-local-files": {
+        "file-data": [
+            "/output/170202-1620/exported_data-phase1_170202-1620.json"
+          ]
+      },            
       "gen-files": {
         "file-entities": "entities-phase2.json",
         "file-data": [
