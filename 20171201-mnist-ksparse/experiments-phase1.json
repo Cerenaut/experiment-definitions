@@ -7,6 +7,9 @@
             "data-phase1.json"
           ]
       },
+      "load-local-files": {
+        "file-data": []
+      },      
       "gen-files": {
         "file-entities": "entities-phase1.json",
         "file-data": [
