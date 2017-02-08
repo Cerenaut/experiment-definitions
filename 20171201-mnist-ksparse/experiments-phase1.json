@@ -46,7 +46,9 @@
               "parameter-path": "momentum",
               "val-series": [0.5]
             }
-          ],
+          ]
+        },
+        {
           "parameter-set": [
             {
               "entity-name": "autoencoder",
@@ -63,28 +65,6 @@
               "parameter-path": "momentum",
               "val-series": [0.1]
             }
-          ],
-          "parameter-set": [
-            {
-              "entity-name": "autoencoder",
-              "parameter-path": "ageMax",
-              "val-series": [60000]
-            },
-            {
-              "entity-name": "image-class",
-              "parameter-path": "trainingEpochs",
-              "val-series": [2]
-            },
-            {
-              "entity-name": "autoencoder",
-              "parameter-path": "momentum",
-              "val-series": [0.1]
-            },
-            {
-              "entity-name": "autoencoder",
-              "parameter-path": "batchSize",
-              "val-series": [100]
-            }            
           ]
         }
       ]
