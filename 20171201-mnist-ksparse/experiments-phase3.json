@@ -1,0 +1,25 @@
+{
+  "experiments": [
+    {
+      "import-files": {
+        "file-entities": "entities-phase3.json",
+        "file-data": [
+            "data-phase3.json"
+          ]
+      },
+      "load-local-files": {
+        "file-data": [
+            "/output/170208-1309i/saved__170208-1309i--experiment-data.json"
+          ]
+      },      
+      "gen-files": {
+        "file-entities": "entities-phase3.json",
+        "file-data": [
+            "data-phase3.json"
+          ]
+      },
+      "dataset-parameters": [],
+      "parameter-sweeps": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[
+    {
+        "refKeys": "170208-1309i--logistic-regression-output-labels-truth", 
+        "name": "SPAGHETTI--classification-analysis-input-truth"
+    }, 
+    {
+        "refKeys": "170208-1309i--logistic-regression-output-labels-predicted", 
+        "name": "SPAGHETTI--classification-analysis-input-predicted"
+    }
+]
+
