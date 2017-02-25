@@ -19,7 +19,23 @@
           ]
       },
       "dataset-parameters": [],
-      "parameter-sweeps": []
+      "parameter-sweeps": [
+        {
+          "parameter-set": [
+            {
+              "entity-name": "SPAGHETTI--classification-analysis",
+              "parameter-path": "sampleOffset",
+              "val-series": [60000]
+            },            
+            {
+              "entity-name": "SPAGHETTI--classification-analysis",
+              "parameter-path": "sampleLength",
+              "val-series": [10000]
+            }            
+          ]
+        }
+      ]
+
     }
   ]
 }
