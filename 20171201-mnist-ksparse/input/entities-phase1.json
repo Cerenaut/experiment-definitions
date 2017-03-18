@@ -7,21 +7,21 @@
     }, 
     {
         "node": "myNode", 
-        "config": "{\"receptiveField\":{\"receptiveFieldX\":\"0\",\"receptiveFieldY\":\"0\",\"receptiveFieldW\":\"28\",\"receptiveFieldH\":\"28\"},\"resolution\":{\"resolutionX\":\"28\",\"resolutionY\":\"28\"},\"epoch\":0,\"shuffle\":true,\"shuffleSeed\":0,\"imageLabel\":0,\"imageIndex\":0,\"imageRepeat\":0,\"imageRepeats\":1,\"terminate\":false,\"phase\":\"training\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\",\"greyscale\":\"true\",\"invert\":\"true\",\"sourceType\":\"images\",\"sourceFilesPrefix\":\"postproc\",\"sourceFilesPathTraining\":\"/Users/gideon/Development/ProjectAGI/AGIEF/datasets/mnist/training-small\",\"sourceFilesPathTesting\":\"/Users/gideon/Development/ProjectAGI/AGIEF/datasets/mnist/training-small, /Users/gideon/Development/ProjectAGI/AGIEF/datasets/mnist/testing-small\",\"trainingEpochs\":\"10\",\"testingEpochs\":\"1\",\"trainingEntities\":\"SPAGHETTI--autoencoder\",\"testingEntities\":\"SPAGHETTI--feature-series,SPAGHETTI--label-series\"}", 
+        "config": "{\"receptiveField\":{\"receptiveFieldX\":\"0\",\"receptiveFieldY\":\"0\",\"receptiveFieldW\":\"28\",\"receptiveFieldH\":\"28\"},\"resolution\":{\"resolutionX\":\"28\",\"resolutionY\":\"28\"},\"sourceFilesLabelDelimiter\":\"_\",\"sourceFilesLabelIndex\":2,\"epoch\":0,\"shuffle\":true,\"shuffleTraining\":true,\"shuffleTesting\":false,\"shuffleSeed\":0,\"imageLabel\":0,\"imageIndex\":0,\"imageRepeat\":0,\"imageRepeats\":1,\"terminate\":false,\"phase\":\"training\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\",\"greyscale\":\"true\",\"invert\":\"true\",\"sourceType\":\"images\",\"sourceFilesPrefix\":\"postproc\",\"sourceFilesPathTraining\":\"/home/dave/workspace/agi.io/data/mnist/1k_test\",\"sourceFilesPathTesting\":\"/home/dave/workspace/agi.io/data/mnist/1k_test\",\"trainingEpochs\":\"2\",\"testingEpochs\":\"1\",\"trainingEntities\":\"SPAGHETTI--autoencoder\",\"testingEntities\":\"SPAGHETTI--feature-series,SPAGHETTI--label-series\"}", 
         "type": "image-label", 
         "name": "SPAGHETTI--image-class", 
         "parent": "SPAGHETTI--experiment"
     }, 
     {
         "node": "myNode", 
-        "config": "{\"sparsity\":0,\"batchCount\":0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\",\"learningRate\":\"0.01\",\"momentum\":\"0.1\",\"widthCells\":\"32\",\"heightCells\":\"32\",\"weightsStdDev\":\"0.01\",\"sparsityOutput\":\"3.0\",\"sparsityMin\":\"25.0\",\"sparsityMax\":\"100.0\",\"ageMin\":\"0\",\"ageMax\":\"5000\",\"batchSize\":\"1\"}", 
+        "config": "{\"sparsity\":0,\"batchCount\":0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\",\"learningRate\":\"0.01\",\"momentum\":\"0.9\",\"widthCells\":\"32\",\"heightCells\":\"32\",\"weightsStdDev\":\"0.01\",\"sparsityOutput\":\"3.0\",\"sparsityMin\":\"25.0\",\"sparsityMax\":\"100.0\",\"ageMin\":\"0\",\"ageMax\":\"1000\",\"batchSize\":\"128\"}", 
         "type": "k-sparse-autoencoder", 
         "name": "SPAGHETTI--autoencoder", 
         "parent": "SPAGHETTI--image-class"
     }, 
     {
         "node": "myNode", 
-        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"cache\":\"true\",\"period\":\"-1\",\"learn\":\"true\"}", 
+        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"cache\":\"true\",\"encoding\":\"sparse-real\",\"period\":\"-1\",\"learn\":\"true\"}", 
         "type": "vector-series", 
         "name": "SPAGHETTI--feature-series", 
         "parent": "SPAGHETTI--autoencoder"
