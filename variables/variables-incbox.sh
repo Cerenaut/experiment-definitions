@@ -16,7 +16,7 @@
 export AGI_HOME=/home/incubator/agief-project/agi
 
 # RUN Home
-export AGI_RUN_HOME=/home/incubator/agief-project/experiment-definitions/20171201-mnist-ksparse
+export AGI_RUN_HOME=/home/incubator/agief-project/run
 
 # Experiment Home
 export AGI_EXP_HOME=$AGI_RUN_HOME
