@@ -7,16 +7,23 @@
     }, 
     {
         "node": "myNode", 
-        "config": "{\"testingEntities\":\"SPAGHETTI--logistic-regression\",\"trainSetSize\":60000,\"testSetSize\":70000,\"testSetOffset\":0,\"batchMode\":true,\"terminate\":false,\"phase\":\"training\",\"count\":0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\"}", 
+        "config": "{\"testingEntities\":\"SPAGHETTI--logistic-regression\",\"trainSetSize\":60000,\"testSetSize\":70000,\"trainSetOffset\":0,\"testSetOffset\":60000,\"predictDuringTraining\":true,\"batchMode\":true,\"terminate\":false,\"phase\":\"training\",\"count\":0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\"}", 
         "type": "analytics", 
         "name": "SPAGHETTI--analytics", 
         "parent": "SPAGHETTI--experiment"
     }, 
     {
         "node": "myNode", 
-        "config": "{\"modelString\":\"\",\"C\":100.0,\"bias\":true,\"algorithm\":\"algorithm-logistic-regression\",\"learningMode\":\"sample\",\"predict\":false,\"learnBatchOnce\":false,\"learnBatchComplete\":false,\"accumulateSamples\":false,\"learningPeriod\":-1,\"labelOneHot\":false,\"labelClasses\":0,\"labelsTruth\":0,\"labelsPredicted\":0,\"labelsError\":0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\"}", 
+        "config": "{\"modelString\":\"\",\"C\":100.0,\"bias\":true,\"algorithm\":\"algorithm-logistic-regression\",\"learningMode\":\"sample\",\"predict\":false,\"learnBatchOnce\":false,\"learnBatchComplete\":false,\"accumulateSamples\":false,\"learnAccumulatedSamples\":false,\"learningPeriod\":-1,\"labelClasses\":10,\"labelsTruth\":0,\"labelsPredicted\":0,\"labelsError\":0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\"}", 
         "type": "supervised-batch-training-entity", 
         "name": "SPAGHETTI--logistic-regression", 
         "parent": "SPAGHETTI--analytics"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"sampleOffset\":0,\"sampleLength\":0,\"errorCount\":0.0,\"errorFraction\":0.0,\"errorPercentage\":0.0,\"samples\":0,\"betaSq\":0.0,\"sortedLabels\":[],\"confusionMatrix\":[],\"labelStatistics\":{},\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":false}", 
+        "type": "classification-analysis", 
+        "name": "SPAGHETTI--classification-analysis", 
+        "parent": "SPAGHETTI--logistic-regression"
     }
 ]
