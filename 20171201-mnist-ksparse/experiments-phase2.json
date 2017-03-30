@@ -35,7 +35,7 @@
             {
               "entity-name": "analytics",
               "parameter-path": "testSetSize",
-              "val-series": [70000,70000,70000,70000,70000,70000]
+              "val-series": [10000,10000,10000,10000,10000,10000]
             },            
             {
               "entity-name": "analytics",

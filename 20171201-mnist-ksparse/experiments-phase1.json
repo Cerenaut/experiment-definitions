@@ -34,12 +34,12 @@
             {
               "entity-name": "autoencoder",
               "parameter-path": "ageMax",
-              "val-series": [60000]
+              "val-series": [240000]
             },
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [2]
+              "val-series": [8]
             }            
           ]
         }
