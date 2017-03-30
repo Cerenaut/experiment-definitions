@@ -40,7 +40,7 @@
             {
               "entity-name": "analytics",
               "parameter-path": "testSetOffset",
-              "val-series": [0,0,0,0,0,0]
+              "val-series": [60000,60000,60000,60000,60000,60000]
             }            
           ]
         }
