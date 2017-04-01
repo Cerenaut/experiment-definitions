@@ -39,12 +39,12 @@
             {
               "entity-name": "autoencoder",
               "parameter-path": "sparsityOutput",
-              "value": [1.5,1.5,1.5]
+              "val-series": [1.5,1.5,1.5]
             },
             {
               "entity-name": "autoencoder",
               "parameter-path": "learningRate",
-              "value": [0.01,0.01,0.01]
+              "val-series": [0.01,0.01,0.01]
             },
             {
               "entity-name": "image-class",
