@@ -1,0 +1,43 @@
+[
+    {
+        "node": "myNode", 
+        "config": "{\"pause\":false,\"terminate\":false,\"terminating\":false,\"terminated\":false,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"terminationEntityName\":\"SPAGHETTI--image-class\",\"terminationConfigPath\":\"terminate\",\"terminationAge\":\"-1\",\"cache\":\"true\"}", 
+        "type": "experiment", 
+        "name": "SPAGHETTI--experiment"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"width\":1,\"height\":1,\"value\":0.0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\"}", 
+        "type": "constant-matrix", 
+        "name": "SPAGHETTI--constant", 
+        "parent": "SPAGHETTI--experiment"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"receptiveField\":{\"receptiveFieldX\":\"0\",\"receptiveFieldY\":\"0\",\"receptiveFieldW\":\"28\",\"receptiveFieldH\":\"28\"},\"resolution\":{\"resolutionX\":\"28\",\"resolutionY\":\"28\"},\"sourceFilesLabelDelimiter\":\"_\",\"sourceFilesLabelIndex\":2,\"epoch\":0,\"shuffle\":true,\"shuffleTraining\":true,\"shuffleTesting\":false,\"shuffleSeed\":0,\"imageLabel\":0,\"imageIndex\":0,\"imageRepeat\":0,\"imageRepeats\":1,\"terminate\":false,\"phase\":\"training\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\",\"greyscale\":\"true\",\"invert\":\"true\",\"sourceType\":\"images\",\"sourceFilesPrefix\":\"postproc\",\"sourceFilesPathTraining\":\"/home/dave/workspace/agi.io/data/mnist/1k_test\",\"sourceFilesPathTesting\":\"/home/dave/workspace/agi.io/data/mnist/1k_test\",\"trainingEpochs\":\"10\",\"testingEpochs\":\"1\",\"trainingEntities\":\"SPAGHETTI--quilt\",\"testingEntities\":\"SPAGHETTI--feature-series,SPAGHETTI--label-series\"}", 
+        "type": "image-label", 
+        "name": "SPAGHETTI--image-class", 
+        "parent": "SPAGHETTI--constant"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"resetDelayed\":false,\"field2OffsetX\":0,\"field2OffsetY\":0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\",\"quiltWidth\":\"7\",\"quiltHeight\":\"7\",\"classifierWidth\":\"5\",\"classifierHeight\":\"5\",\"field1OffsetX\":\"2\",\"field1OffsetY\":\"2\",\"field1StrideX\":\"4\",\"field1StrideY\":\"4\",\"field1SizeX\":\"6\",\"field1SizeY\":\"6\",\"field2StrideX\":\"0\",\"field2StrideY\":\"0\",\"field2SizeX\":\"1\",\"field2SizeY\":\"1\",\"classifierLearningRate\":\"0.01\",\"classifierLearningRateNeighbours\":\"0.002\",\"classifierNoiseMagnitude\":\"0.0\",\"classifierEdgeMaxAge\":\"500\",\"classifierStressLearningRate\":\"0.01\",\"classifierStressSplitLearningRate\":\"0.5\",\"classifierStressThreshold\":\"0.01\",\"classifierGrowthInterval\":\"50\"}", 
+        "type": "quilted-competitive-learning", 
+        "name": "SPAGHETTI--quilt", 
+        "parent": "SPAGHETTI--image-class"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"flushPeriod\":-1,\"encoding\":\"dense\",\"writeFilePath\":\"\",\"writeFilePrefix\":\"\",\"writeFileExtension\":\"json\",\"age\":0,\"reset\":false,\"flush\":false,\"cache\":\"true\",\"period\":\"-1\",\"learn\":\"true\"}", 
+        "type": "vector-series", 
+        "name": "SPAGHETTI--feature-series", 
+        "parent": "SPAGHETTI--quilt"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"flushPeriod\":-1,\"writeFileEncoding\":\"dense\",\"writeFilePath\":\"\",\"writeFilePrefix\":\"\",\"writeFileExtension\":\"json\",\"age\":0,\"reset\":false,\"flush\":false,\"cache\":\"true\",\"period\":\"-1\",\"learn\":\"true\",\"entityName\":\"SPAGHETTI--image-class\",\"configPath\":\"imageLabel\"}", 
+        "type": "value-series", 
+        "name": "SPAGHETTI--label-series", 
+        "parent": "SPAGHETTI--feature-series"
+    }
+]

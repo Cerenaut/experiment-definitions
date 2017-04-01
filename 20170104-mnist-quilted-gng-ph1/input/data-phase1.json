@@ -1,0 +1,14 @@
+[
+    {
+        "refKeys": "SPAGHETTI--image-class-output-image", 
+        "name": "SPAGHETTI--quilt-input-1"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--constant-output", 
+        "name": "SPAGHETTI--quilt-input-2"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--quilt-output-quilt", 
+        "name": "SPAGHETTI--feature-series-input"
+    }
+]
