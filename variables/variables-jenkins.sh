@@ -17,9 +17,9 @@ export AGI_RUN_HOME=/root/dev/run
 
 # Experiment Definitions home. Set to the home of the experiment definitions - i.e. the environment where you are launching experiments from, which is not necessarily where they are being executed.
 #export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20171201-mnist-ksparse
-#export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20171201-mnist-ksparse
+export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20171201-mnist-ksparse
 #export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170104-mnist-onlineksparse-ph1
-export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170104-mnist-quilted-gng-ph1
+#export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170104-mnist-quilted-gng-ph1
 
 # DATA Home
 export AGI_DATA_HOME=$AGI_EXP_HOME		# there is no Data on Jenkins, but needs to be a real folder
