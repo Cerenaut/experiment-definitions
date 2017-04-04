@@ -17,8 +17,8 @@ export AGI_RUN_HOME=/root/dev/run
 
 # Experiment Definitions home. Set to the home of the experiment definitions - i.e. the environment where you are launching experiments from, which is not necessarily where they are being executed.
 #export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20171201-mnist-ksparse
-#export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20171201-mnist-ksparse
-export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170104-mnist-onlineksparse-ph1
+export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20171201-mnist-ksparse
+#export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170104-mnist-onlineksparse-ph1
 #export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170104-mnist-quilted-gng-ph1
 #export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170404-mnist-onlineksparse-real
 
