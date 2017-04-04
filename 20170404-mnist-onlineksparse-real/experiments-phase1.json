@@ -44,7 +44,7 @@
             {
               "entity-name": "autoencoder",
               "parameter-path": "learningRate",
-              "val-series": [0.02]
+              "val-series": [0.01]
             },
             {
               "entity-name": "image-class",
