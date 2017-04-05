@@ -21,6 +21,7 @@ export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20171201-mnist-ksparse
 #export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170104-mnist-onlineksparse-ph1
 #export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170104-mnist-quilted-gng-ph1
 #export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/20170404-mnist-onlineksparse-real
+#export AGI_EXP_HOME=$WORKSPACE/experiment-definitions/2017-simple-test-experiment
 
 # DATA Home
 export AGI_DATA_HOME=$AGI_EXP_HOME		# there is no Data on Jenkins, but needs to be a real folder
