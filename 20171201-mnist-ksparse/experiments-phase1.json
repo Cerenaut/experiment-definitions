@@ -33,24 +33,14 @@
           "parameter-set": [
             {
               "entity-name": "autoencoder",
-              "parameter-path": "batchSize",
-              "val-series": [1]
-            },
-            {
-              "entity-name": "autoencoder",
-              "parameter-path": "momentum",
-              "val-series": [0.2]
-            },
-            {
-              "entity-name": "autoencoder",
               "parameter-path": "ageMax",
-              "val-series": [120000]
+              "val-series": [7680000]
             },
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [4]
-            }            
+              "val-series": [256]
+            }         
           ]
         }
       ]
