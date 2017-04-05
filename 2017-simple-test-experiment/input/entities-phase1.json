@@ -21,14 +21,14 @@
     }, 
     {
         "node": "myNode", 
-        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"cache\":\"true\",\"encoding\":\"sparse-real\",\"period\":\"-1\",\"learn\":\"true\"}", 
+        "config": "{\"writeFileExtension\":\"json\",\"age\":0,\"reset\":false,\"flush\":false,\"cache\":\"true\",\"encoding\":\"sparse-real\",\"flushPeriod\":\"-1\",\"period\":\"-1\",\"writeFilePath\":\"/home/dave/workspace/agi.io/data/flush\",\"writeFilePrefix\":\"flushedFeatures\",\"learn\":\"true\",\"writeFileEncoding\":\"dense\"}", 
         "type": "vector-series", 
         "name": "SPAGHETTI--feature-series", 
         "parent": "SPAGHETTI--autoencoder"
     }, 
     {
         "node": "myNode", 
-        "config": "{\"age\":0,\"reset\":false,\"flush\":false,\"cache\":\"true\",\"period\":\"-1\",\"learn\":\"true\",\"entityName\":\"SPAGHETTI--image-class\",\"configPath\":\"imageLabel\"}", 
+        "config": "{\"writeFileEncoding\":\"dense\",\"writeFileExtension\":\"json\",\"age\":0,\"reset\":false,\"flush\":false,\"cache\":\"true\",\"flushPeriod\":\"-1\",\"period\":\"-1\",\"learn\":\"true\",\"writeFilePath\":\"/home/dave/workspace/agi.io/data/flush\",\"writeFilePrefix\":\"flushedTruth\",\"entityName\":\"SPAGHETTI--image-class\",\"configPath\":\"imageLabel\"}", 
         "type": "value-series", 
         "name": "SPAGHETTI--label-series", 
         "parent": "SPAGHETTI--feature-series"
