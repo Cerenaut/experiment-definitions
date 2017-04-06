@@ -1,12 +1,13 @@
 #!/bin/bash
 
 expfolder=$1
-runframeworkfolder $2
+runframeworkfolder=$2
 runcommand=$3 ; shift ; shift ; shift
 prefixes=("$@")
 
 
 echo expfolder = $expfolder
+echo runframeworkfolder = $runframeworkfolder
 echo runcommand = $runcommand
 
 i=0
@@ -25,7 +26,7 @@ do
 	sed_string="sed -i.bak 's/PASTASAUCE/${prefix}/g' ./input/data-phase2.json"
 	eval $sed_string
 
-	cd $WORKSPACE/run-framework/scripts/run-framework
+	cd $runframeworkfolder
     
 	# execute command
 	eval $runcommand
