@@ -1,7 +1,8 @@
 #!/bin/bash
 
 expfolder=$1
-runcommand=$2 ; shift ; shift
+runframeworkfolder $2
+runcommand=$3 ; shift ; shift ; shift
 prefixes=("$@")
 
 
