@@ -30,7 +30,7 @@
             {
               "entity-name": "analytics",
               "parameter-path": "trainSetSize",
-              "val-series": [60000,60000,60000,60000,60000,60000]
+              "val-series": [60000]
             },
             {
               "entity-name": "analytics",
