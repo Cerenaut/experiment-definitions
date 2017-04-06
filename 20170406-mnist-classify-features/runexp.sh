@@ -27,7 +27,7 @@ do
 	cd $WORKSPACE/run-framework/scripts/run-framework
     
 	# execute command
-	exec $runcommand
+	eval $runcommand
 	    
     cd $expfolder
 
