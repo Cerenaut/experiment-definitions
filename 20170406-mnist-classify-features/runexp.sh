@@ -29,7 +29,8 @@ do
 	cd $runframeworkfolder
     
 	# execute command
-	eval $runcommand
+	cmd=`eval echo $runcommand`			# expand prefix variable before executing
+	eval $cmd
 	    
     cd $expfolder
 
