@@ -34,32 +34,32 @@
             {
               "entity-name": "quilt",
               "parameter-path": "edgeMaxAge",
-              "val-series": [500]
+              "val-series": [500, 500]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "growthInterval",
-              "val-series": [50]
+              "val-series": [50, 50]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "learningRate",
-              "val-series": [0.01]
+              "val-series": [0.01, 0.01]
             },
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [1]
+              "val-series": [2, 4]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierWidth",
-              "val-series": [7]
+              "val-series": [7, 7]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierHeight",
-              "val-series": [7]
+              "val-series": [7, 7]
             }
           ]
         }
