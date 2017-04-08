@@ -49,17 +49,22 @@
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [4]
+              "val-series": [1,2,4]
             },
             {
               "entity-name": "quilt",
+              "parameter-path": "classifierUtilityLearningRate",
+              "val-series": [5, 5, 5, 5]
+            },            
+            {
+              "entity-name": "quilt",
               "parameter-path": "classifierWidth",
-              "val-series": [8, 8, 8, 8]
+              "val-series": [6, 6, 6, 6]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierHeight",
-              "val-series": [8, 8, 8, 8]
+              "val-series": [6, 6, 6, 6]
             }
           ]
         }
