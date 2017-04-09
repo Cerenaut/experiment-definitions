@@ -54,17 +54,17 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierUtilityLearningRate",
-              "val-series": [5, 5, 5, 5]
+              "val-series": [-1, -1, -1, -1]
             },            
             {
               "entity-name": "quilt",
               "parameter-path": "classifierWidth",
-              "val-series": [6, 6, 6, 6]
+              "val-series": [8, 8, 8, 8]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierHeight",
-              "val-series": [6, 6, 6, 6]
+              "val-series": [8, 8, 8, 8]
             }
           ]
         }
