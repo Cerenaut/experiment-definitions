@@ -39,12 +39,12 @@
             {
               "entity-name": "quilt",
               "parameter-path": "growthInterval",
-              "val-series": [50, 50, 50, 50]
+              "val-series": [55, 55, 55, 55]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "learningRate",
-              "val-series": [0.01, 0.01, 0.01, 0.01]
+              "val-series": [0.009, 0.009, 0.009, 0.009]
             },
             {
               "entity-name": "image-class",
@@ -59,12 +59,12 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierWidth",
-              "val-series": [8, 8, 8, 8]
+              "val-series": [7, 7, 7, 7]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierHeight",
-              "val-series": [8, 8, 8, 8]
+              "val-series": [7, 7, 7, 7]
             }
           ]
         }
