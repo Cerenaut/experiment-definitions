@@ -49,7 +49,7 @@
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [4]
+              "val-series": [8]
             },
             {
               "entity-name": "quilt",
