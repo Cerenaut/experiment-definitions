@@ -4,6 +4,8 @@ source $VARIABLES_FILE
 
 prefixes=(170406-1606 170406-1607)
 
+prefixes=`cat prefix.txt`
+
 cmd="python run-framework.py
 	--step_remote simple
 	--exps_file experiments-phase2.json
@@ -18,7 +20,7 @@ cmd="python run-framework.py
     --ssh_keypath /home/tomcat/.ssh/inc-box
 	--remote_variables_file /home/incubator/agief-project/variables/variables-incbox.sh"
 
-./runexp.sh $AGI_EXP_HOME "/Users/gideon/Development/ProjectAGI/AGIEF/run-framework/scripts/run-framework" "$cmd" $prefixes
+./runexp.sh $AGI_EXP_HOME "/Users/gideon/Development/ProjectAGI/AGIEF/run-framework/scripts/run-framework" "$cmd" $prefixes # ${prefixes[*]}
 
 
 exit
