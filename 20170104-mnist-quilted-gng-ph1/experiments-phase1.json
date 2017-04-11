@@ -39,12 +39,12 @@
             {
               "entity-name": "quilt",
               "parameter-path": "growthInterval",
-              "val-series": [55, 55, 55, 55]
+              "val-series": [50, 50, 50, 50]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "learningRate",
-              "val-series": [0.009, 0.009, 0.009, 0.009]
+              "val-series": [0.01, 0.01, 0.01, 0.01]
             },
             {
               "entity-name": "image-class",
