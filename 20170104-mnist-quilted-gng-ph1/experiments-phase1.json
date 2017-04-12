@@ -44,12 +44,12 @@
             {
               "entity-name": "quilt",
               "parameter-path": "learningRate",
-              "val-series": [0.008, 0.008, 0.008, 0.008]
+              "val-series": [0.009, 0.009, 0.009, 0.009]
             },
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [8]
+              "val-series": [32]
             },
             {
               "entity-name": "quilt",
