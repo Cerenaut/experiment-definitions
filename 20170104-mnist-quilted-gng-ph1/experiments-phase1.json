@@ -100,12 +100,7 @@
               "entity-name": "quilt",
               "parameter-path": "emit2ndBest",
               "val-series": [false,"*"]
-            },
-            {
-              "entity-name": "analytics",
-              "parameter-path": "trainingDropoutProbability",
-              "val-series": [0,"*"]
-            },            
+            },          
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
@@ -184,12 +179,7 @@
               "entity-name": "quilt",
               "parameter-path": "emit2ndBest",
               "val-series": [true,"*"]
-            },
-            {
-              "entity-name": "analytics",
-              "parameter-path": "trainingDropoutProbability",
-              "val-series": [0,"*"]
-            },            
+            },           
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
