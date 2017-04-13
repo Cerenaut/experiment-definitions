@@ -123,7 +123,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierGrowthInterval",
-              "val-series": [25 100 500 1000]
+              "val-series": [25, 100, 500, 1000]
             },
             {
               "entity-name": "quilt",
