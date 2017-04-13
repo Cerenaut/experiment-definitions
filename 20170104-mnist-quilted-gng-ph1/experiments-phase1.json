@@ -99,7 +99,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "emit2ndBest",
-              "val-series": [true,"*"]
+              "val-series": [false,"*"]
             },
             {
               "entity-name": "analytics",
