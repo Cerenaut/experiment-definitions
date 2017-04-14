@@ -34,7 +34,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierEdgeMaxAge",
-              "val-series": [250, 750, 1000, 2000]
+              "val-series": [500, "*"]
             },
             {
               "entity-name": "quilt",
@@ -44,7 +44,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierLearningRate",
-              "val-series": [0.01,"*"]
+              "val-series": [0.015, 0.008, 0.001]
             },
             {
               "entity-name": "quilt",
@@ -107,86 +107,7 @@
               "val-series": [1,2,4]
             }
           ]
-        },
-        {
-          "parameter-set": [
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierEdgeMaxAge",
-              "val-series": [500]
-            },
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierGrowthInterval",
-              "val-series": [25, 100, 500, 1000]
-            },
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierLearningRate",
-              "val-series": [0.01,"*"]
-            },
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierLearningRateNeighbours",
-              "val-series": [0.002,"*"]
-            },
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierStressLearningRate",
-              "val-series": [0.01,"*"]
-            },
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierStressSplitLearningRate",
-              "val-series": [0.5,"*"]
-            },             
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierStressThreshold",
-              "val-series": [0.01,"*"]
-            },            
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierUtilityLearningRate",
-              "val-series": [0.01,"*"]
-            },            
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierUtilityThreshold",
-              "val-series": [-1,"*"]
-            },                        
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierWidth",
-              "val-series": [7,"*"]
-            },
-            {
-              "entity-name": "quilt",
-              "parameter-path": "classifierHeight",
-              "val-series": [7,"*"]
-            },
-            {
-              "entity-name": "quilt",
-              "parameter-path": "quiltWidth",
-              "val-series": [6,"*"]
-            },
-            {
-              "entity-name": "quilt",
-              "parameter-path": "quiltHeight",
-              "val-series": [6,"*"]
-            },
-            {
-              "entity-name": "quilt",
-              "parameter-path": "emit2ndBest",
-              "val-series": [true,"*"]
-            },           
-            {
-              "entity-name": "image-class",
-              "parameter-path": "trainingEpochs",
-              "val-series": [1,2,4]
-            }
-          ]
-        }        
+        }    
       ]
     }
   ]
