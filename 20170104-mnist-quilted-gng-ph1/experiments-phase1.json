@@ -44,7 +44,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierLearningRate",
-              "val-series": [0.015, 0.008, 0.001]
+              "val-series": [0.01]
             },
             {
               "entity-name": "quilt",
@@ -54,7 +54,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierStressLearningRate",
-              "val-series": [0.01,"*"]
+              "val-series": [0.005, 0.015, 0.005, 0.015, 0.005, 0.015]
             },
             {
               "entity-name": "quilt",
@@ -104,7 +104,7 @@
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [1,2,4]
+              "val-series": [1,1,2,2,4,4]
             }
           ]
         }    
