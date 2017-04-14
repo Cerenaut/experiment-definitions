@@ -21,7 +21,7 @@
     }, 
     {
         "node": "myNode", 
-        "config": "{\"sampleOffset\":0,\"sampleLength\":0,\"errorCount\":0.0,\"errorFraction\":0.0,\"errorPercentage\":0.0,\"samples\":0,\"betaSq\":0.0,\"sortedLabels\":[],\"confusionMatrix\":[],\"labelStatistics\":{},\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":false}", 
+        "config": "{\"sampleOffset\":0,\"sampleLength\":0,\"errorCount\":0.0,\"errorFraction\":0.0,\"errorPercentage\":0.0,\"samples\":0,\"betaSq\":0.0,\"sortedLabels\":[],\"confusionMatrix\":[],\"labelStatistics\":{},\"resultsSummary\":\"\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":false}", 
         "type": "classification-analysis", 
         "name": "SPAGHETTI--classification-analysis", 
         "parent": "SPAGHETTI--logistic-regression"
