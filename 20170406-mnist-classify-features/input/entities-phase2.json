@@ -1,13 +1,13 @@
 [
     {
         "node": "myNode", 
-        "config": "{\"pause\":false,\"terminate\":false,\"terminating\":false,\"terminated\":false,\"terminationEntityName\":\"SPAGHETTI--analytics\",\"terminationConfigPath\":\"terminate\",\"terminationAge\":-1,\"reportingEntityName\":\"SPAGHETTI--classification-analysis\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\"}", 
+        "config": "{\"pause\":false,\"terminate\":false,\"terminating\":false,\"terminated\":false,\"terminationEntityName\":\"SPAGHETTI--analytics\",\"terminationConfigPath\":\"terminate\",\"terminationAge\":-1,\"reportingEntityName\":\"SPAGHETTI--classification-analysis\",\"reportingEntityConfigPath\":\"resultsSummary\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\"}", 
         "type": "experiment", 
         "name": "SPAGHETTI--experiment"
     }, 
     {
         "node": "myNode", 
-        "config": "{\"testingEntities\":\"SPAGHETTI--logistic-regression\",\"trainSetSize\":60000,\"testSetSize\":70000,\"trainSetOffset\":0,\"testSetOffset\":60000,\"predictDuringTraining\":true,\"batchMode\":true,\"terminate\":false,\"phase\":\"training\",\"count\":0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\"}", 
+        "config": "{\"testingEntities\":\"SPAGHETTI--logistic-regression\",\"trainSetSize\":60000,\"testSetSize\":70000,\"trainSetOffset\":0,\"testSetOffset\":60000,\"trainingDropoutProbability\":0.020408163,\"predictDuringTraining\":true,\"batchMode\":true,\"terminate\":false,\"phase\":\"training\",\"count\":0,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":\"true\"}", 
         "type": "analytics", 
         "name": "SPAGHETTI--analytics", 
         "parent": "SPAGHETTI--experiment"
