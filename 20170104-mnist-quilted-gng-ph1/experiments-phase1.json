@@ -9,7 +9,7 @@
       },
       "load-local-files": {
         "file-data": []
-      },      
+      },
       "gen-files": {
         "file-entities": "entities-phase1.json",
         "file-data": [
@@ -34,7 +34,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierEdgeMaxAge",
-              "val-series": [250, 250, 750, 750, 1000, 1000, 2000, 2000, 2000]
+              "val-series": [500,"*"]
             },
             {
               "entity-name": "quilt",
@@ -44,7 +44,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierLearningRate",
-              "val-series": [0.01]
+              "val-series": [0.01,"*"]
             },
             {
               "entity-name": "quilt",
@@ -54,28 +54,28 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierStressLearningRate",
-              "val-series": [0.01]
+              "val-series": [0.01,"*"]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierStressSplitLearningRate",
               "val-series": [0.5,"*"]
-            },             
+            },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierStressThreshold",
               "val-series": [0.01,"*"]
-            },            
+            },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierUtilityLearningRate",
-              "val-series": [-1,"*"]
-            },            
+              "val-series": [0.01,"*"]
+            },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierUtilityThreshold",
               "val-series": [-1,"*"]
-            },                        
+            },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierWidth",
@@ -99,15 +99,15 @@
             {
               "entity-name": "quilt",
               "parameter-path": "emit2ndBest",
-              "val-series": [false,"*"]
-            },          
+              "val-series": [true,"*"]
+            },
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [2,4,1,4,2,3,1,2,4]
+              "val-series": [1,2,4]
             }
           ]
-        }    
+        }
       ]
     }
   ]
