@@ -39,7 +39,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierGrowthInterval",
-              "val-series": [200,"*"]
+              "val-series": [25, 25, 100, 500, 1000, 1000, 1000]
             },
             {
               "entity-name": "quilt",
@@ -99,12 +99,12 @@
             {
               "entity-name": "quilt",
               "parameter-path": "emit2ndBest",
-              "val-series": [true,"*"]
+              "val-series": [false,"*"]
             },
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [1,2,4]
+              "val-series": [2, 4, 4, 4, 1, 2, 4]
             }
           ]
         }
