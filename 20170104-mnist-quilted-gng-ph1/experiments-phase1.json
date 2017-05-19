@@ -104,7 +104,7 @@
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [1,2,4]
+              "val-series": [8, 16]
             }
           ]
         }
