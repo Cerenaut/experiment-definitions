@@ -33,13 +33,18 @@
           "parameter-set": [
             {
               "entity-name": "quilt",
+              "parameter-path": "classifierNoiseMagnitude",
+              "val-series": [0,"*"]
+            },
+            {
+              "entity-name": "quilt",
               "parameter-path": "classifierEdgeMaxAge",
               "val-series": [500,"*"]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierGrowthInterval",
-              "val-series": [25, 25, 100, 500, 500, 500, 1000, 1000, 1000]
+              "val-series": [50, "*"]
             },
             {
               "entity-name": "quilt",
@@ -79,32 +84,32 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierWidth",
-              "val-series": [7,"*"]
+              "val-series": [5, 8, "*"]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "classifierHeight",
-              "val-series": [7,"*"]
+              "val-series": [5, 8, "*"]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "quiltWidth",
-              "val-series": [6,"*"]
+              "val-series": [7, "*"]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "quiltHeight",
-              "val-series": [6,"*"]
+              "val-series": [7, "*"]
             },
             {
               "entity-name": "quilt",
               "parameter-path": "emit2ndBest",
-              "val-series": [false,"*"]
+              "val-series": [false, "*"]
             },
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [2,4,4,1,2,4,1,2,4]
+              "val-series": [2, 2]
             }
           ]
         }
