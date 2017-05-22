@@ -2,22 +2,31 @@
 
 source $VARIABLES_FILE
 
-prefixes=(170406-1606 170406-1607)
+prefixes=`cat prefixes.txt`
 
-prefixes=`cat prefix.txt`
+# cmd="python run-framework.py
+# 	--step_remote simple
+# 	--exps_file experiments-phase2.json
+# 	--step_sync
+# 	--step_sync_s3_prefix \$prefix
+# 	--step_compute
+# 	--step_export_compute
+# 	--step_upload
+#     --user incubator
+# 	--host 192.168.1.100
+# 	--port 8491
+#     --ssh_keypath ~/.ssh/inc-box
+# 	--remote_variables_file /home/incubator/agief-project/variables/variables-incbox.sh"
 
 cmd="python run-framework.py
 	--step_remote simple
 	--exps_file experiments-phase2.json
 	--step_sync
-	--step_sync_s3_prefix \$prefix
 	--step_compute
-	--step_export_compute
-	--step_upload
     --user incubator
-	--host box.x.agi.io
+	--host 192.168.1.100
 	--port 8491
-    --ssh_keypath /home/tomcat/.ssh/inc-box
+    --ssh_keypath ~/.ssh/inc-box
 	--remote_variables_file /home/incubator/agief-project/variables/variables-incbox.sh"
 
 ./runexp.sh $AGI_EXP_HOME "/Users/gideon/Development/ProjectAGI/AGIEF/run-framework/scripts/run-framework" "$cmd" $prefixes # ${prefixes[*]}
