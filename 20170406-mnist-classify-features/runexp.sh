@@ -27,15 +27,22 @@ do
 	eval $sed_string
 
 	cd $runframeworkfolder
-    
+
 	# execute command
 	cmd=`eval echo $runcommand`			# expand prefix variable before executing
 	eval $cmd
-	    
+
+	status=$?
+
+	if [ $status -ne 0 ]; then
+		echo "ERROR: run-framework exited with error status: $status"
+		exit $status
+	fi
+
     cd $expfolder
 
 	# restore the modified files
 	cp experiments-phase2.json.bak experiments-phase2.json
 	cp ./input/data-phase2.json.bak ./input/data-phase2.json
-	
+
 done
