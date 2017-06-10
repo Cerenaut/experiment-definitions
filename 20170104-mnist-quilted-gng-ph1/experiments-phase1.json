@@ -34,7 +34,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierNoiseMagnitude",
-              "val-series": [0,"*"]
+              "val-series": [0]
             },
             {
               "entity-name": "quilt",
