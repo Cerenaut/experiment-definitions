@@ -13,16 +13,16 @@
 # ---------------------------------------
 
 # Code Home
-export AGI_HOME=/home/incubator/agief-project/agi
+export AGI_HOME=/Users/incubator/agief-project/agi
 
 # RUN Home
-export AGI_RUN_HOME=/home/incubator/agief-project/run
+export AGI_RUN_HOME=/Users/incubator/agief-project/run
 
 # Experiment Home
 export AGI_EXP_HOME=$AGI_RUN_HOME
 
 # DATA Home
-export AGI_DATA_HOME=/home/incubator/agief-project/data/mnist
+export AGI_DATA_HOME=/Users/incubator/agief-project/data/mnist
 
 # DATA Run Home (set to the home of the data for the actual experiment - i.e. in the environment where they'll be running)
 export AGI_DATA_RUN_HOME=/root/dev/data
