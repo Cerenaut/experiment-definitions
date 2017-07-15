@@ -39,7 +39,7 @@
             {
               "entity-name": "quilt",
               "parameter-path": "classifierEdgeMaxAge",
-              "val-series": [500,"*"]
+              "val-series": [500, "*"]
             },
             {
               "entity-name": "quilt",
