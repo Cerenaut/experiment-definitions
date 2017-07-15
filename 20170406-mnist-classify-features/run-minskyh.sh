@@ -22,13 +22,11 @@ cmd="python run-framework.py
 	--step_remote simple
 	--exps_file experiments-phase2.json
 	--step_sync
-	--step_sync_s3_prefix $prefixes
 	--step_compute
     --user incubator
-	--host box.x.agi.io
-	--port 8492
+	--host 192.168.1.103
+	--port 8491
     --ssh_keypath ~/.ssh/minsky
-    --ssh_port 4912
 	--remote_variables_file /Users/incubator/agief-project/variables/variables-minsky.sh"
 
 ./runexp.sh $AGI_EXP_HOME "/Users/gideon/Development/ProjectAGI/AGIEF/run-framework/scripts/run-framework" "$cmd" $prefixes # ${prefixes[*]}
