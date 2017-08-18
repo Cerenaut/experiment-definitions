@@ -30,17 +30,17 @@
             {
               "entity-name": "analytics",
               "parameter-path": "trainSetSize",
-              "val-series": [60000,60000,60000,60000,60000,60000]
+              "val-series": [60000, 60000, 60000, 60000, 60000, 60000]
             },
             {
               "entity-name": "analytics",
               "parameter-path": "testSetSize",
-              "val-series": [10000,10000,10000,10000,10000,10000]
+              "val-series": [10000, 10000, 10000, 10000, 10000, 10000]
             },            
             {
               "entity-name": "analytics",
               "parameter-path": "testSetOffset",
-              "val-series": [60000,60000,60000,60000,60000,60000]
+              "val-series": [60000, 60000, 60000, 60000, 60000, 60000]
             }            
           ]
         }
