@@ -34,47 +34,47 @@
             {
               "entity-name": "autoencoder",
               "parameter-path": "ageMax",
-              "val-series": [30000]
+              "val-series": [30000, 60000, 120000]
             },
             {
               "entity-name": "autoencoder",
               "parameter-path": "sparsityMin",
-              "val-series": [25]
+              "val-series": [25, "*"]
             },
             {
               "entity-name": "autoencoder",
               "parameter-path": "sparsityMax",
-              "val-series": [100]
+              "val-series": [100, "*"]
             },
             {
               "entity-name": "autoencoder",
               "parameter-path": "sparsityOutput",
-              "val-series": [3]
+              "val-series": [3, "*"]
             },
             {
               "entity-name": "autoencoder",
               "parameter-path": "batchSize",
-              "val-series": [1]
+              "val-series": [128, "*"]
             },
             {
               "entity-name": "autoencoder",
               "parameter-path": "learningRate",
-              "val-series": [0.01]
+              "val-series": [0.01, "*"]
             },
             {
               "entity-name": "autoencoder",
               "parameter-path": "momentum",
-              "val-series": [0.5]
+              "val-series": [0.9, "*"]
             },
             {
               "entity-name": "autoencoder",
               "parameter-path": "weightsStdDev",
-              "val-series": [0.01]
+              "val-series": [0.01, "*"]
             },
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [1]
+              "val-series": [1, 2, 4]
             }
           ]
         }
