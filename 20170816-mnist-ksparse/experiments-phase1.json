@@ -1,0 +1,84 @@
+{
+  "experiments": [
+    {
+      "import-files": {
+        "file-entities": "entities-phase1.json",
+        "file-data": [
+            "data-phase1.json"
+          ]
+      },
+      "load-local-files": {
+        "file-data": []
+      },
+      "gen-files": {
+        "file-entities": "entities-phase1.json",
+        "file-data": [
+            "data-phase1.json"
+          ]
+      },
+      "dataset-parameters": [
+        {
+          "entity-name": "image-class",
+          "parameter-path": "sourceFilesPathTraining",
+          "value": "training"
+        },
+        {
+          "entity-name": "image-class",
+          "parameter-path": "sourceFilesPathTesting",
+          "value": "training, testing"
+        }
+      ],
+      "parameter-sweeps": [
+        {
+          "parameter-set": [
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "ageMax",
+              "val-series": [30000, 60000, 120000]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "sparsityMin",
+              "val-series": [25, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "sparsityMax",
+              "val-series": [100, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "sparsityOutput",
+              "val-series": [3, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "batchSize",
+              "val-series": [128, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "learningRate",
+              "val-series": [0.01, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "momentum",
+              "val-series": [0.9, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "weightsStdDev",
+              "val-series": [0.01, "*"]
+            },
+            {
+              "entity-name": "image-class",
+              "parameter-path": "trainingEpochs",
+              "val-series": [1, 2, 4]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
