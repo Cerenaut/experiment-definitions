@@ -14,7 +14,7 @@ i=0
 for prefix in "${prefixes[@]}"
 do
 	let i++
-	echo $i : prefix = $prefix
+	echo $i : Dataset from phase 1 experiment prefix = $prefix
 
 	cd $expfolder
 
