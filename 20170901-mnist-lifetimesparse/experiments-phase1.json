@@ -44,7 +44,7 @@
             {
               "entity-name": "autoencoder",
               "parameter-path": "batchSize",
-              "val-series": [1, "*"]
+              "val-series": [32, "*"]
             },
             {
               "entity-name": "autoencoder",
@@ -64,7 +64,7 @@
             {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [1]
+              "val-series": [128]
             }
           ]
         }
