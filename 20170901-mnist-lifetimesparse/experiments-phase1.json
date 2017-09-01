@@ -1,0 +1,74 @@
+{
+  "experiments": [
+    {
+      "import-files": {
+        "file-entities": "entities-phase1.json",
+        "file-data": [
+            "data-phase1.json"
+          ]
+      },
+      "load-local-files": {
+        "file-data": []
+      },
+      "gen-files": {
+        "file-entities": "entities-phase1.json",
+        "file-data": [
+            "data-phase1.json"
+          ]
+      },
+      "dataset-parameters": [
+        {
+          "entity-name": "image-class",
+          "parameter-path": "sourceFilesPathTraining",
+          "value": "training"
+        },
+        {
+          "entity-name": "image-class",
+          "parameter-path": "sourceFilesPathTesting",
+          "value": "training, testing"
+        }
+      ],
+      "parameter-sweeps": [
+        {
+          "parameter-set": [
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "sparsity",
+              "val-series": [25, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "sparsityLifetime",
+              "val-series": [2, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "batchSize",
+              "val-series": [1, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "learningRate",
+              "val-series": [0.01, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "momentum",
+              "val-series": [0.5, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
+              "parameter-path": "weightsStdDev",
+              "val-series": [0.01, "*"]
+            },
+            {
+              "entity-name": "image-class",
+              "parameter-path": "trainingEpochs",
+              "val-series": [1]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

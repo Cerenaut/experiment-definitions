@@ -1,0 +1,10 @@
+[
+    {
+        "refKeys": "SPAGHETTI--image-class-output-image", 
+        "name": "SPAGHETTI--autoencoder-input"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--autoencoder-spikes", 
+        "name": "SPAGHETTI--feature-series-input"
+    }
+]
