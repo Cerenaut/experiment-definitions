@@ -1,0 +1,36 @@
+[
+    {
+        "node": "myNode", 
+        "config": "{\"pause\":false,\"terminate\":false,\"terminating\":false,\"terminated\":false,\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"terminationEntityName\":\"SPAGHETTI--image-class\",\"terminationConfigPath\":\"terminate\",\"terminationAge\":\"-1\",\"cache\":\"true\"}", 
+        "type": "experiment", 
+        "name": "SPAGHETTI--experiment"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"receptiveField\":{\"receptiveFieldX\":0,\"receptiveFieldY\":0,\"receptiveFieldW\":28,\"receptiveFieldH\":28},\"resolution\":{\"resolutionX\":28,\"resolutionY\":28},\"greyscale\":true,\"invert\":true,\"sourceFilesPathTraining\":\"/home/dave/workspace/agi.io/data/mnist/10k_train\",\"sourceFilesPathTesting\":\"/home/dave/workspace/agi.io/data/mnist/10k_train,/home/dave/workspace/agi.io/data/mnist/1k_test\",\"sourceFilesLabelDelimiter\":\"_\",\"sourceFilesLabelIndex\":2,\"trainingEntities\":\"SPAGHETTI--cnn\",\"testingEntities\":\"SPAGHETTI--feature-series,SPAGHETTI--label-series\",\"epoch\":0,\"trainingEpochs\":1,\"testingEpochs\":1,\"shuffle\":true,\"shuffleTraining\":false,\"shuffleTesting\":false,\"shuffleSeed\":0,\"imageLabel\":0,\"imageIndex\":0,\"imageRepeat\":0,\"imageRepeats\":1,\"imageChanged\":false,\"terminate\":false,\"phase\":\"training\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":true}", 
+        "type": "image-label", 
+        "name": "SPAGHETTI--image-class", 
+        "parent": "SPAGHETTI--experiment"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"batchSize\":20,\"learningRate\":0.01,\"momentum\":0.5,\"weightsStdDev\":0.01,\"layerSparsity\":\"1\",\"layerSparsityLifetime\":\"1\",\"invertSelection\":\"\",\"nbrLayers\":2,\"layerInputPadding\":\"0,0\",\"layerInputStride\":\"1,1\",\"layerWidth\":\"26,11\",\"layerHeight\":\"26,11\",\"layerDepth\":\"8,64\",\"layerfieldWidth\":\"3,3\",\"layerfieldHeight\":\"3,3\",\"layerfieldDepth\":\"1,8\",\"layerPoolingWidth\":\"2,2\",\"layerPoolingHeight\":\"2,2\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":true}", 
+        "type": "autoencoder-convolutional-network", 
+        "name": "SPAGHETTI--cnn", 
+        "parent": "SPAGHETTI--image-class"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"periodAccumulate\":1,\"flushPeriod\":-1,\"period\":-1,\"countAccumulate\":0,\"encoding\":\"sparse-binary\",\"writeFilePath\":\"\",\"writeFilePrefix\":\"\",\"writeFileExtension\":\"json\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":true}", 
+        "type": "vector-series", 
+        "name": "SPAGHETTI--feature-series", 
+        "parent": "SPAGHETTI--cnn"
+    }, 
+    {
+        "node": "myNode", 
+        "config": "{\"periodAccumulate\":1,\"flushPeriod\":-1,\"period\":-1,\"value\":0.0,\"valueAccumulate\":0.0,\"factorAccumulate\":1.0,\"countAccumulate\":0,\"entityName\":\"SPAGHETTI--image-class\",\"configPath\":\"imageLabel\",\"dataName\":\"\",\"dataOffset\":0,\"writeFileEncoding\":\"dense\",\"writeFilePath\":\"\",\"writeFilePrefix\":\"\",\"writeFileExtension\":\"json\",\"age\":0,\"reset\":false,\"flush\":false,\"learn\":true,\"cache\":true}", 
+        "type": "value-series", 
+        "name": "SPAGHETTI--label-series", 
+        "parent": "SPAGHETTI--feature-series"
+    }
+]
