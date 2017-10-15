@@ -1,0 +1,42 @@
+[
+    {
+        "refKeys": "SPAGHETTI--image-class-output-image", 
+        "name": "SPAGHETTI--cnn-input"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--problem-output-reward", 
+        "name": "SPAGHETTI--ql-input-reward-new"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--cnn-spikes", 
+        "name": "SPAGHETTI--ql-input-states-new"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--policy-output-actions", 
+        "name": "SPAGHETTI--ql-input-actions-old"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--cnn-spikes", 
+        "name": "SPAGHETTI--policy-input-states-new"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--ql-output-actions-quality", 
+        "name": "SPAGHETTI--policy-input-actions-quality"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--policy-output-actions", 
+        "name": "SPAGHETTI--problem-input-actions"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--image-class-output-label", 
+        "name": "SPAGHETTI--problem-input-actions-ideal"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--problem-output-reward", 
+        "name": "SPAGHETTI--reward-2-learning-rate-reward"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--cnn-spikes", 
+        "name": "SPAGHETTI--feature-series-input"
+    }
+]
