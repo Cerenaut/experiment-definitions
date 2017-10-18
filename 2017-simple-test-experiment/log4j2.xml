@@ -8,15 +8,18 @@
             <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
         <LogzioAppender name="Logzio">
-            <logzioToken>GCyUsNXehkUPmPKgFanJMgqHGivyBLCK</logzioToken>
+            <logzioToken>$AGI_LOGZIO_TOKEN</logzioToken>
             <logzioType>myAwesomeType</logzioType>
+            <addHostname>true</addHostname>
+            <additionalFields>
+                experiment=2017-simple-test-experiment;
+                dataset=mnist
+            </additionalFields>
         </LogzioAppender>
     </Appenders>
     <Loggers>
-        <Root level="INFO">
-            <AppenderRef ref="LogzioAppender" />
-            <!-- <AppenderRef ref="Console" /> -->
-            <AppenderRef ref="MyFile"/>
+        <Root level="info">
+            <AppenderRef ref="Logzio"/>
         </Root>
     </Loggers>
 </Configuration>
