@@ -1,2 +1,5 @@
 cp.txt
 log4j2.log
+
+**/input/*/
+**/output
