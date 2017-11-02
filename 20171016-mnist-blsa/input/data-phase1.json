@@ -4,6 +4,10 @@
         "name": "SPAGHETTI--cnn-input"
     }, 
     {
+        "refKeys": "SPAGHETTI--reward-2-learning-rate-output-learning-rate", 
+        "name": "SPAGHETTI--cnn-input-learning-rate"
+    }, 
+    {
         "refKeys": "SPAGHETTI--problem-output-reward", 
         "name": "SPAGHETTI--ql-input-reward-new"
     }, 
