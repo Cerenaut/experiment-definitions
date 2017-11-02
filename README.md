@@ -63,4 +63,4 @@ This is only required for new experiments.
 
 **Debugging**
 
-If age is not incrementing (after a few minutes), go to Loggly, stderr should’ve been logged.
+If age is not incrementing (after a few minutes), review the `log4j2.log`, `stderr.log` and `stdout.log` on the machine.
