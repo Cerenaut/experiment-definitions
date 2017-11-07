@@ -7,9 +7,19 @@
         <File name="MyFile" fileName="log4j2.log" immediateFlush="false" append="false">
             <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
+        <LogzioAppender name="Logzio">
+            <logzioToken>$AGI_LOGZIO_TOKEN</logzioToken>
+            <logzioType>java</logzioType>
+            <addHostname>true</addHostname>
+            <additionalFields>
+                experiment=20170816-mnist-ksparse;
+                dataset=mnist
+            </additionalFields>
+        </LogzioAppender>
     </Appenders>
     <Loggers>
         <Root level="INFO">
+            <AppenderRef ref="Logzio"/>
             <AppenderRef ref="MyFile"/>
         </Root>
     </Loggers>

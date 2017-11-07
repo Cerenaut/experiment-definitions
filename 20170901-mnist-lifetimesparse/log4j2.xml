@@ -9,7 +9,7 @@
         </File>
         <LogzioAppender name="Logzio">
             <logzioToken>$AGI_LOGZIO_TOKEN</logzioToken>
-            <logzioType>myAwesomeType</logzioType>
+            <logzioType>java</logzioType>
             <addHostname>true</addHostname>
             <additionalFields>
                 experiment=20170901-mnist-lifetimesparse;

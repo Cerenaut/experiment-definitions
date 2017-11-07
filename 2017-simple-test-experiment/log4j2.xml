@@ -9,7 +9,7 @@
         </File>
         <LogzioAppender name="Logzio">
             <logzioToken>$AGI_LOGZIO_TOKEN</logzioToken>
-            <logzioType>myAwesomeType</logzioType>
+            <logzioType>java</logzioType>
             <addHostname>true</addHostname>
             <additionalFields>
                 experiment=2017-simple-test-experiment;
@@ -18,7 +18,7 @@
         </LogzioAppender>
     </Appenders>
     <Loggers>
-        <Root level="info">
+        <Root level="INFO">
             <AppenderRef ref="Logzio"/>
             <AppenderRef ref="MyFile"/>
         </Root>

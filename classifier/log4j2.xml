@@ -7,9 +7,19 @@
         <File name="MyFile" fileName="all.log" immediateFlush="false" append="false">
             <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
+        <LogzioAppender name="Logzio">
+            <logzioToken>$AGI_LOGZIO_TOKEN</logzioToken>
+            <logzioType>java</logzioType>
+            <addHostname>true</addHostname>
+            <additionalFields>
+                experiment=classifier;
+                dataset=mnist
+            </additionalFields>
+        </LogzioAppender>
     </Appenders>
     <Loggers>
         <Root level="info">
+            <AppenderRef ref="Logzio"/>
             <AppenderRef ref="Console" />
             <AppenderRef ref="MyFile"/>
         </Root>
