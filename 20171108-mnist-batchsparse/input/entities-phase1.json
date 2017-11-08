@@ -14,22 +14,22 @@
     }, 
     {
         "node": "myNode", 
-        "config": "{\"learningRate\":0.01,\"momentum\":0.5,\"widthCells\":32,\"heightCells\":32,\"sparsity\":25,\"sparsityLifetime\":2,\"sparsityOutput\":37,\"weightsStdDev\":0.01,\"batchCount\":0,\"batchSize\":32,\"age\":0,\"reset\":false,\"learn\":true,\"cache\":true}", 
+        "config": "{\"learningRate\":0.01,\"momentum\":0.9,\"widthCells\":32,\"heightCells\":32,\"sparsity\":25,\"sparsityLifetime\":2,\"sparsityOutput\":37,\"weightsStdDev\":0.01,\"batchCount\":0,\"batchSize\":32,\"age\":0,\"reset\":false,\"learn\":true,\"cache\":true}", 
         "type": "lifetime-sparse-autoencoder", 
         "name": "SPAGHETTI--autoencoder", 
         "parent": "SPAGHETTI--image-class"
     }, 
     {
         "node": "myNode", 
-        "config": "{\"periodAccumulate\":1,\"countAccumulate\":0,\"writeFileExtension\":\"json\",\"age\":0,\"reset\":false,\"cache\":\"true\",\"encoding\":\"sparse-real\",\"flushPeriod\":\"-1\",\"period\":\"-1\",\"writeFilePath\":\"/home/dave/workspace/agi.io/data/flush\",\"writeFilePrefix\":\"flushedFeatures\",\"learn\":\"true\"}", 
-        "type": "vector-series", 
+        "config": "{\"encoding\":\"sparse-real\",\"fileNameWrite\":\"/home/dave/Desktop/agi/data/batch_sparse/features.csv\",\"write\":true,\"append\":true,\"read\":false,\"ioCapacity\":100,\"newLine\":\"\\n\",\"age\":0,\"reset\":false,\"learn\":true,\"cache\":true}", 
+        "type": "vector-data-file", 
         "name": "SPAGHETTI--feature-series", 
         "parent": "SPAGHETTI--autoencoder"
     }, 
     {
         "node": "myNode", 
-        "config": "{\"periodAccumulate\":1,\"value\":0.0,\"valueAccumulate\":0.0,\"factorAccumulate\":1.0,\"countAccumulate\":0,\"dataOffset\":0,\"writeFileExtension\":\"json\",\"age\":0,\"reset\":false,\"cache\":\"true\",\"writeFileEncoding\":\"dense\",\"flushPeriod\":\"-1\",\"period\":\"-1\",\"learn\":\"true\",\"writeFilePath\":\"/home/dave/workspace/agi.io/data/flush\",\"writeFilePrefix\":\"flushedTruth\",\"entityName\":\"SPAGHETTI--image-class\",\"configPath\":\"imageLabel\"}", 
-        "type": "value-series", 
+        "config": "{\"encoding\":\"dense\",\"fileNameWrite\":\"/home/dave/Desktop/agi/data/batch_sparse/labels.csv\",\"write\":true,\"append\":true,\"read\":false,\"ioCapacity\":100,\"newLine\":\"\\n\",\"age\":0,\"reset\":false,\"learn\":true,\"cache\":true}", 
+        "type": "vector-data-file", 
         "name": "SPAGHETTI--label-series", 
         "parent": "SPAGHETTI--feature-series"
     }
