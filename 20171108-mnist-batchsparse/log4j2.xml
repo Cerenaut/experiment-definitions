@@ -12,7 +12,7 @@
             <logzioType>java</logzioType>
             <addHostname>true</addHostname>
             <additionalFields>
-                experiment=20170901-mnist-lifetimesparse;
+                experiment=20171108-mnist-batchsparse;
                 dataset=mnist
             </additionalFields>
         </LogzioAppender>
