@@ -26,16 +26,6 @@
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTesting",
           "value": "training, testing"
-        },
-        {
-          "entity-name": "feature-series",
-          "parameter-path": "fileNameWrite",
-          "value": "features.csv"
-        },
-        {
-          "entity-name": "label-series",
-          "parameter-path": "fileNameWrite",
-          "value": "labels.csv"
         }
       ],
       "parameter-sweeps": [
