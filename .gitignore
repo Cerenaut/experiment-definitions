@@ -1,5 +1,7 @@
+*.bak
 cp.txt
 log4j2.log
+prefixes.txt
 
 **/input/*/
 **/output
