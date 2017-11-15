@@ -1,0 +1,65 @@
+{
+  "experiments": [
+    {
+      "import-files": {
+        "file-entities": "entities-phase2.json",
+        "file-data": [
+            "data-phase2.json"
+          ]
+      },
+      "load-local-files": {
+        "file-data": []
+      },
+      "gen-files": {
+        "file-entities": "entities-phase2.json",
+        "file-data": [
+            "data-phase2.json"
+          ]
+      },
+      "config-parameters": [
+        {
+          "entity-name": "analytics",
+          "parameter-path": "fileNameFeatures",
+          "value": "/output/PASTASAUCEfeatures_PASTASAUCE.csv"
+        },
+        {
+          "entity-name": "analytics",
+          "parameter-path": "fileNameLabels",
+          "value": "/output/PASTASAUCE/labels_PASTASAUCE.csv"
+        },
+        {
+          "entity-name": "analytics",
+          "parameter-path": "useInputFiles",
+          "value": "true"
+        }
+      ],
+      "dataset-parameters": [],
+      "parameter-sweeps": [
+        {
+          "parameter-set": [
+            {
+              "entity-name": "logistic-regression",
+              "parameter-path": "C",
+              "val-series": [0.1, 1.0, 10]
+            },
+            {
+              "entity-name": "analytics",
+              "parameter-path": "trainSetSize",
+              "val-series": [60000, "*"]
+            },
+            {
+              "entity-name": "analytics",
+              "parameter-path": "testSetSize",
+              "val-series": [10000, "*"]
+            },
+            {
+              "entity-name": "analytics",
+              "parameter-path": "testSetOffset",
+              "val-series": [60000, "*"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

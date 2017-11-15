@@ -13,7 +13,7 @@
             <addHostname>true</addHostname>
             <fileSystemFullPercentThreshold>-1</fileSystemFullPercentThreshold>
             <additionalFields>
-                experiment=20171108-mnist-batchsparse;
+                experiment=20171115-mnist-phase2b;
                 dataset=mnist
             </additionalFields>
         </LogzioAppender>
