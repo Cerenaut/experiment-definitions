@@ -16,6 +16,8 @@
             "data-phase1.json"
           ]
       },
+      "config-parameters": [],
+      "analytics-parameters": [],
       "dataset-parameters": [
         {
           "entity-name": "image-class",

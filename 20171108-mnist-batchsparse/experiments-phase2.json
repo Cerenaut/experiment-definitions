@@ -16,6 +16,24 @@
             "data-phase2.json"
           ]
       },
+      "config-parameters": [],
+      "analytics-parameters": [
+        {
+          "entity-name": "analytics",
+          "parameter-path": "fileNameFeatures",
+          "value": "/output/PASTASAUCE/features_PASTASAUCE.csv"
+        },
+        {
+          "entity-name": "analytics",
+          "parameter-path": "fileNameLabels",
+          "value": "/output/PASTASAUCE/labels_PASTASAUCE.csv"
+        },
+        {
+          "entity-name": "analytics",
+          "parameter-path": "useInputFiles",
+          "value": "true"
+        }
+      ],
       "dataset-parameters": [],
       "parameter-sweeps": [
         {

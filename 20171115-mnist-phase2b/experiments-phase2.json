@@ -20,7 +20,7 @@
         {
           "entity-name": "analytics",
           "parameter-path": "fileNameFeatures",
-          "value": "/output/PASTASAUCEfeatures_PASTASAUCE.csv"
+          "value": "/output/PASTASAUCE/features_PASTASAUCE.csv"
         },
         {
           "entity-name": "analytics",
