@@ -16,8 +16,18 @@
             "data-phase1.json"
           ]
       },
-      "config-parameters": [],
-      "analytics-parameters": [],
+      "entity-parameters": [
+        {
+          "entity-name": "features-series",
+          "parameter-path": "fileNameWrite",
+          "value": "/output/PASTASAUCE/features_PASTASAUCE.csv"
+        },
+        {
+          "entity-name": "fileNameWrite",
+          "parameter-path": "fileNameLabels",
+          "value": "/output/PASTASAUCE/labels_PASTASAUCE.csv"
+        }
+      ],
       "dataset-parameters": [
         {
           "entity-name": "image-class",

@@ -16,8 +16,7 @@
             "data-phase2.json"
           ]
       },
-      "config-parameters": [],
-      "analytics-parameters": [
+      "entity-parameters": [
         {
           "entity-name": "analytics",
           "parameter-path": "fileNameFeatures",
