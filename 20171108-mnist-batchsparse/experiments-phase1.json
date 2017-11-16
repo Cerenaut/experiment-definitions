@@ -23,8 +23,8 @@
           "value": "/output/PASTASAUCE/features_PASTASAUCE.csv"
         },
         {
-          "entity-name": "fileNameWrite",
-          "parameter-path": "fileNameLabels",
+          "entity-name": "labels-series",
+          "parameter-path": "fileNameWrite",
           "value": "/output/PASTASAUCE/labels_PASTASAUCE.csv"
         }
       ],
