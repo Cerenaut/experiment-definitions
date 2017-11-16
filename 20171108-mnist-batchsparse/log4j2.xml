@@ -11,7 +11,6 @@
             <logzioToken>$AGI_LOGZIO_TOKEN</logzioToken>
             <logzioType>java</logzioType>
             <addHostname>true</addHostname>
-            <fileSystemFullPercentThreshold>-1</fileSystemFullPercentThreshold>
             <additionalFields>
                 experiment=20171108-mnist-batchsparse;
                 dataset=mnist
