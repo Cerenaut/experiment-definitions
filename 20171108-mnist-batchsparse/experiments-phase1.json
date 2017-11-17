@@ -18,12 +18,12 @@
       },
       "entity-parameters": [
         {
-          "entity-name": "features-series",
+          "entity-name": "feature-series",
           "parameter-path": "fileNameWrite",
           "value": "/output/PASTASAUCE/features_PASTASAUCE.csv"
         },
         {
-          "entity-name": "labels-series",
+          "entity-name": "label-series",
           "parameter-path": "fileNameWrite",
           "value": "/output/PASTASAUCE/labels_PASTASAUCE.csv"
         }
