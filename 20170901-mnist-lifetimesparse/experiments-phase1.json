@@ -16,6 +16,7 @@
             "data-phase1.json"
           ]
       },
+      "entity-parameters": [],
       "dataset-parameters": [
         {
           "entity-name": "image-class",

@@ -5,6 +5,7 @@
         "file-entities": "experiment-entity.json",
         "file-data": "experiment-data.json"
       },
+      "entity-parameters": [],
       "parameter-sweeps": [
         {
           "parameter-set": [

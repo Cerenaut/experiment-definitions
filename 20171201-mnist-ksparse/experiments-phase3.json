@@ -18,6 +18,7 @@
             "data-phase3.json"
           ]
       },
+      "entity-parameters": [],
       "dataset-parameters": [],
       "parameter-sweeps": [
         {
