@@ -22,7 +22,7 @@ export AGI_RUN_HOME=/home/incubator/agief-project/run
 export AGI_EXP_HOME=$AGI_RUN_HOME
 
 # DATA Home
-export AGI_DATA_HOME=/home/incubator/agief-project/data/mnist
+export AGI_DATA_HOME=/home/incubator/agief-project/data/svhn
 
 # DATA Run Home (set to the home of the data for the actual experiment - i.e. in the environment where they'll be running)
 export AGI_DATA_RUN_HOME=/root/dev/data
@@ -30,7 +30,7 @@ export AGI_DATA_RUN_HOME=/root/dev/data
 
 
 
-# Database 
+# Database
 export DB_PORT=5432
 export DB_HOST=172.31.22.107		# for Task on ECS, we need the hardcoded value, because we can't go in and set an env variable before running the java process - this will need to be improved.
 
