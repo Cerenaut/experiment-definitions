@@ -1,18 +1,14 @@
 [
     {
-        "refKeys": "SPAGHETTI--analytics-output-features", 
-        "name": "SPAGHETTI--logistic-regression-input-features"
+        "refKeys": "SPAGHETTI--image-class-output-image", 
+        "name": "SPAGHETTI--autoencoder-input"
     }, 
     {
-        "refKeys": "SPAGHETTI--analytics-output-labels", 
-        "name": "SPAGHETTI--logistic-regression-input-labels"
+        "refKeys": "SPAGHETTI--autoencoder-spikes", 
+        "name": "SPAGHETTI--feature-series-input-write"
     }, 
     {
-        "refKeys": "SPAGHETTI--logistic-regression-output-labels-truth", 
-        "name": "SPAGHETTI--classification-analysis-input-truth"
-    }, 
-    {
-        "refKeys": "SPAGHETTI--logistic-regression-output-labels-predicted", 
-        "name": "SPAGHETTI--classification-analysis-input-predicted"
+        "refKeys": "SPAGHETTI--image-class-output-label", 
+        "name": "SPAGHETTI--label-series-input-write"
     }
 ]
