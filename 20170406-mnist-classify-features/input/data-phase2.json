@@ -1,10 +1,10 @@
 [
     {
-        "refKeys": "PASTASAUCE--feature-series-output", 
+        "refKeys": "PREFIX--feature-series-output", 
         "name": "SPAGHETTI--analytics-input-features"
     }, 
     {
-        "refKeys": "PASTASAUCE--label-series-output", 
+        "refKeys": "PREFIX--label-series-output", 
         "name": "SPAGHETTI--analytics-input-labels"
     }, 
     {

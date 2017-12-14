@@ -11,7 +11,7 @@
         "file-data": [
             "/output/PASTASAUCE/saved__PASTASAUCE--experiment-data.json"
           ]
-      },      
+      },
       "gen-files": {
         "file-entities": "entities-phase2.json",
         "file-data": [
@@ -31,18 +31,18 @@
             {
               "entity-name": "analytics",
               "parameter-path": "trainSetSize",
-              "val-series": [60000,"*"]
+              "val-series": [60000, "*"]
             },
             {
               "entity-name": "analytics",
               "parameter-path": "testSetSize",
-              "val-series": [10000,"*"]
-            },            
+              "val-series": [10000, "*"]
+            },
             {
               "entity-name": "analytics",
               "parameter-path": "testSetOffset",
-              "val-series": [60000,"*"]
-            }            
+              "val-series": [60000, "*"]
+            }
           ]
         }
       ]
