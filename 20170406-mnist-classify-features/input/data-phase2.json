@@ -1,10 +1,10 @@
 [
     {
-        "refKeys": "SPAGHETTI--feature-series-output",
+        "refKeys": "PREFIX--feature-series-output", 
         "name": "SPAGHETTI--analytics-input-features"
     }, 
     {
-        "refKeys": "SPAGHETTI--label-series-output",
+        "refKeys": "PREFIX--label-series-output", 
         "name": "SPAGHETTI--analytics-input-labels"
     }, 
     {
@@ -16,11 +16,11 @@
         "name": "SPAGHETTI--logistic-regression-input-labels"
     }, 
     {
-        "refKeys": "SPAGHETTI--logistic-regression-output-labels-truth",
+        "refKeys": "SPAGHETTI--logistic-regression-output-labels-truth", 
         "name": "SPAGHETTI--classification-analysis-input-truth"
     }, 
     {
-        "refKeys": "SPAGHETTI--logistic-regression-output-labels-predicted",
+        "refKeys": "SPAGHETTI--logistic-regression-output-labels-predicted", 
         "name": "SPAGHETTI--classification-analysis-input-predicted"
     }
 ]
