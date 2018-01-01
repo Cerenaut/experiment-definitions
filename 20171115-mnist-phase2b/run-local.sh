@@ -11,8 +11,7 @@ cmd="python run-framework.py
   --step_upload
   --host localhost
   --port 8491
-  --no_docker
-  --csv_output"
+  --no_docker"
 
 ./runexp.sh $AGI_EXP_HOME "${AGI_RUNFRAMEWORK_PATH}/scripts/run-framework" "$cmd" $prefixes # ${prefixes[*]}
 
