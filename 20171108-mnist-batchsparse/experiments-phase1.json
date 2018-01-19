@@ -50,6 +50,11 @@
             },
             {
               "entity-name": "autoencoder",
+              "parameter-path": "sparsityOutput",
+              "val-series": [75, "*"]
+            },
+            {
+              "entity-name": "autoencoder",
               "parameter-path": "sparsityLifetime",
               "val-series": [2, "*"]
             },
