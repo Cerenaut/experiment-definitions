@@ -1,7 +1,7 @@
 [
     {
         "node": "myNode", 
-        "config": "{\"pause\":false,\"terminate\":false,\"terminating\":false,\"terminated\":false,\"terminationEntityName\":\"SPAGHETTI--analytics\",\"terminationConfigPath\":\"terminate\",\"terminationAge\":-1,\"reportingEntityName\":\"SPAGHETTI--classification-analysis\",\"reportingEntityConfigPath\":\"resultsSummary\",\"age\":0,\"reset\":false,\"learn\":true,\"cache\":\"true\"}", 
+        "config": "{\"pause\":false,\"terminate\":false,\"terminating\":false,\"terminated\":false,\"terminationEntityName\":\"SPAGHETTI--analytics\",\"terminationConfigPath\":\"terminate\",\"terminationAge\":-1,\"startTime\":0,\"runTime\":0,\"reportingEntities\":\"SPAGHETTI--classification-analysis\",\"reportingEntityConfigPath\":\"resultsSummary\",\"age\":0,\"reset\":false,\"learn\":true,\"cache\":\"true\"}", 
         "type": "experiment", 
         "name": "SPAGHETTI--experiment"
     }, 
