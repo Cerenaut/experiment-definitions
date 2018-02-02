@@ -1,17 +1,23 @@
 #!/bin/bash
 
 ######################################################################
+# Use this 'variables.sh' if you are running the system in a Docker container.
+# BEWARE: Some of the parameters NEED to be the same inside and outside the
+# container (such as API_PORT, depending on the port mappings).
+#
+# OR
+#
 # Use this 'variables.sh' if you are running the system on EC2,
 # or if you are are deploying Docker containters from EC2 machine.
 #
 # In general, it doesn't need to be modified.
-# INSTEAD - modify the variables.sh file that you are using on the 
-# 			machine from which you are syncing to here.
+# INSTEAD - modify the variables.sh file that you are using on the
+#           machine from which you are syncing to here.
 ######################################################################
 
 
 # ----------------------------------------
-# AGI Home 
+# AGI Home
 # ---------------------------------------
 export AGI_HOME=$USER/agief-project/agi
 
