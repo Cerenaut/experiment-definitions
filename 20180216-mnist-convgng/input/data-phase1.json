@@ -1,0 +1,14 @@
+[
+    {
+        "refKeys": "SPAGHETTI--image-class-output-image", 
+        "name": "SPAGHETTI--cnn-input"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--cnn-output", 
+        "name": "SPAGHETTI--feature-series-input-write"
+    }, 
+    {
+        "refKeys": "SPAGHETTI--image-class-output-label", 
+        "name": "SPAGHETTI--label-series-input-write"
+    }
+]

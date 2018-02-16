@@ -1,0 +1,106 @@
+{
+  "experiments": [
+    {
+      "import-files": {
+        "file-entities": "entities-phase1.json",
+        "file-data": [
+            "data-phase1.json"
+          ]
+      },
+      "load-local-files": {
+        "file-data": []
+      },
+      "gen-files": {
+        "file-entities": "entities-phase1.json",
+        "file-data": [
+            "data-phase1.json"
+          ]
+      },
+      "entity-parameters": [
+        {
+          "entity-name": "feature-series",
+          "parameter-path": "fileNameWrite",
+          "value": "/output/PASTASAUCE/features_PASTASAUCE.csv"
+        },
+        {
+          "entity-name": "label-series",
+          "parameter-path": "fileNameWrite",
+          "value": "/output/PASTASAUCE/labels_PASTASAUCE.csv"
+        }
+      ],
+      "dataset-parameters": [
+        {
+          "entity-name": "image-class",
+          "parameter-path": "sourceFilesPathTraining",
+          "value": "training"
+        },
+        {
+          "entity-name": "image-class",
+          "parameter-path": "sourceFilesPathTesting",
+          "value": "training, testing"
+        }
+      ],
+      "parameter-sweeps": [
+        {
+          "parameter-set": [
+            {
+              "entity-name": "cnn",
+              "parameter-path": "edgeMaxAge",
+              "val-series": [500, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "growthInterval",
+              "val-series": [200, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "noiseMagnitude",
+              "val-series": [0, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "learningRate",
+              "val-series": [0.015, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "learningRateNeighbours",
+              "val-series": [0.002, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "stressLearningRate",
+              "val-series": [0.01, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "stressSplitLearningRate",
+              "val-series": [0.5, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "stressThreshold",
+              "val-series": [0, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "utilityLearningRate",
+              "val-series": [0.01, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "utilityThreshold",
+              "val-series": [-1, "*"]
+            },
+            {
+              "entity-name": "image-class",
+              "parameter-path": "trainingEpochs",
+              "val-series": [1, 2, 4, 8, 16]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
