@@ -14,7 +14,7 @@
     }, 
     {
         "node": "myNode", 
-        "config": "{\"learningRate\":0.015,\"learningRateNeighbours\":0.002,\"noiseMagnitude\":0.0,\"edgeMaxAge\":500,\"stressLearningRate\":0.01,\"stressSplitLearningRate\":0.5,\"stressThreshold\":0.0,\"utilityLearningRate\":0.01,\"utilityThreshold\":-1.0,\"growthInterval\":200,\"invertSelection\":\"\",\"nbrLayers\":2,\"layerInputPadding\":\"0,0\",\"layerInputStride\":\"2,1\",\"layerWidth\":\"12,2\",\"layerHeight\":\"12,2\",\"layerDepth\":\"64,1024\",\"layerfieldWidth\":\"5,5\",\"layerfieldHeight\":\"5,5\",\"layerfieldDepth\":\"1,64\",\"layerPoolingWidth\":\"2,2\",\"layerPoolingHeight\":\"2,2\",\"age\":0,\"reset\":false,\"learn\":true,\"cache\":true}", 
+        "config": "{\"learningRate\":0.015,\"learningRateNeighbours\":0.002,\"noiseMagnitude\":0.0,\"edgeMaxAge\":500,\"stressLearningRate\":0.01,\"stressSplitLearningRate\":0.5,\"stressThreshold\":0.0,\"utilityLearningRate\":0.01,\"utilityThreshold\":-1.0,\"growthInterval\":200,\"invertSelection\":\"\",\"nbrLayers\":2,\"layerInputPadding\":\"0,0\",\"layerInputStride\":\"2,1\",\"layerWidth\":\"12,4\",\"layerHeight\":\"12,4\",\"layerDepth\":\"64,256\",\"layerfieldWidth\":\"6,3\",\"layerfieldHeight\":\"6,3\",\"layerfieldDepth\":\"1,64\",\"layerPoolingWidth\":\"2,2\",\"layerPoolingHeight\":\"2,2\",\"age\":0,\"reset\":false,\"learn\":true,\"cache\":true}", 
         "type": "competitive-learning-convolutional-network", 
         "name": "SPAGHETTI--cnn", 
         "parent": "SPAGHETTI--image-class"
