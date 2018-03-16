@@ -19,16 +19,16 @@
 # ----------------------------------------
 # AGI Home
 # ---------------------------------------
-export AGI_HOME=$USER/agief-project/agi
+export AGI_HOME=/home/$USER/agief-project/agi
 
 # RUN Home
-export AGI_RUN_HOME=$USER/agief-project/run
+export AGI_RUN_HOME=/home/$USER/agief-project/run
 
 # EXPeriment Home
-export AGI_EXP_HOME=$AGI_RUN_HOME
+export AGI_EXP_HOME=/home/$AGI_RUN_HOME
 
 # DATA Home
-export AGI_DATA_HOME=$USER/agief-project/data
+export AGI_DATA_HOME=/home/$USER/agief-project/data
 
 # DATA Run Home (set to the home of the data for the actual experiment - i.e. in the environment where they'll be running)
 export AGI_DATA_RUN_HOME=/root/dev/data
