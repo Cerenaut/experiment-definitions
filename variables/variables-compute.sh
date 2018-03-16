@@ -25,7 +25,7 @@ export AGI_HOME=/home/$USER/agief-project/agi
 export AGI_RUN_HOME=/home/$USER/agief-project/run
 
 # EXPeriment Home
-export AGI_EXP_HOME=/home/$AGI_RUN_HOME
+export AGI_EXP_HOME=$AGI_RUN_HOME
 
 # DATA Home
 export AGI_DATA_HOME=/home/$USER/agief-project/data
