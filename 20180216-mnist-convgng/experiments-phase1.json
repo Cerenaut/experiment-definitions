@@ -32,32 +32,17 @@
         {
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTraining",
-          "value": "training"
+          "value": "mnist/training"
         },
         {
           "entity-name": "image-class",
           "parameter-path": "sourceFilesPathTesting",
-          "value": "training, testing"
+          "value": "mnist/training, mnist/testing"
         }
       ],
       "parameter-sweeps": [
         {
           "parameter-set": [
-            {
-              "entity-name": "cnn",
-              "parameter-path": "edgeMaxAge",
-              "val-series": [500, "*"]
-            },
-            {
-              "entity-name": "cnn",
-              "parameter-path": "growthInterval",
-              "val-series": [200, "*"]
-            },
-            {
-              "entity-name": "cnn",
-              "parameter-path": "noiseMagnitude",
-              "val-series": [0, "*"]
-            },
             {
               "entity-name": "cnn",
               "parameter-path": "learningRate",
@@ -67,6 +52,16 @@
               "entity-name": "cnn",
               "parameter-path": "learningRateNeighbours",
               "val-series": [0.002, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "noiseMagnitude",
+              "val-series": [0, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "edgeMaxAge",
+              "val-series": [500, "*"]
             },
             {
               "entity-name": "cnn",
@@ -94,9 +89,64 @@
               "val-series": [-1, "*"]
             },
             {
+              "entity-name": "cnn",
+              "parameter-path": "growthInterval",
+              "val-series": [200, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "nbrLayers",
+              "val-series": [2, "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerInputPadding",
+              "val-series": ["0,0", "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerInputStride",
+              "val-series": ["2,1", "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerWidth",
+              "val-series": ["12,4", "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerHeight",
+              "val-series": ["12,4", "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerDepth",
+              "val-series": ["64,265", "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerfieldWidth",
+              "val-series": ["6,3", "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerfieldHeight",
+              "val-series": ["6,3", "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerPoolingWidth",
+              "val-series": ["2,2", "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerPoolingHeight",
+              "val-series": ["2,2", "*"]
+            },
+            {
               "entity-name": "image-class",
               "parameter-path": "trainingEpochs",
-              "val-series": [1, 2, 4, 8, 16]
+              "val-series": [1, 2, 4, 8]
             }
           ]
         }
