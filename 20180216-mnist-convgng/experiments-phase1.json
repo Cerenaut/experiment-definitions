@@ -121,7 +121,7 @@
             {
               "entity-name": "cnn",
               "parameter-path": "layerDepth",
-              "val-series": ["64,265", "*"]
+              "val-series": ["64,256", "*"]
             },
             {
               "entity-name": "cnn",
@@ -132,6 +132,11 @@
               "entity-name": "cnn",
               "parameter-path": "layerfieldHeight",
               "val-series": ["6,3", "*"]
+            },
+            {
+              "entity-name": "cnn",
+              "parameter-path": "layerfieldDepth",
+              "val-series": ["1,64", "*"]
             },
             {
               "entity-name": "cnn",
